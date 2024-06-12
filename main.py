@@ -42,14 +42,13 @@ import os
 import matplotlib.pyplot as plt
 import math
 from collections import deque
-import gc
 
 
 args = {
     "method": ["dqn", "ddqn"],
     "lr": 2.54e-4,
-    "epoch": 100000,
-    "batch-size": 64,
+    "epoch": 1000000,
+    "batch-size": 32,
     "ddqn_store": True,
     "eval_cycle": 5000,
     "which_gpu": 0,
@@ -60,7 +59,7 @@ ddqn = 0
 GAMMA = 0.99  # bellman function
 EPS_START = 1
 EPS_END = 0.05
-EPS_DECAY = 30000
+EPS_DECAY = 50000
 WARMUP = 1000  # don't update net until WARMUP steps
 
 steps_done = 0
@@ -117,11 +116,16 @@ else:
     policy_net = DuelDQN(in_channels=4, n_actions=n_action).to(args["which_gpu"])
     target_net = DuelDQN(in_channels=4, n_actions=n_action).to(args["which_gpu"])
 # let target model = model
+try:
+  policy_net.load_state_dict(torch.load(os.path.join(log_dir, 'model_continuous.pth')))
+except:
+  print("couldn't find initialization file, model started empty")
+
 target_net.load_state_dict(policy_net.state_dict())
 target_net.eval()
 
 # replay memory
-memory = ReplayMemory(10000)
+memory = ReplayMemory(50000)
 
 # optimizer
 optimizer = optim.AdamW(policy_net.parameters(), lr=args["lr"], amsgrad=True)
@@ -268,8 +272,24 @@ for epoch in range(args["epoch"]):
                                 obs = torch.stack((obs, obs, obs, obs)).unsqueeze(0)
                     evalenv.close()
                     video.save(f"{epoch}.mp4")
-                    torch.save(policy_net, os.path.join(log_dir, f'model{epoch}.pth'))
+                    torch.save(policy_net.state_dict(), os.path.join(log_dir, 'model_continuous.pth'))
                     print(f"Eval epoch {epoch}: Reward {evalreward}")
+                    # plot loss-epoch and reward-epoch
+                    plt.figure(1)
+                    plt.xlabel("Epoch")
+                    plt.ylabel("Loss")
+                    plt.plot(range(len(lossList)), lossList, label="loss")
+                    plt.plot(range(len(lossList)), avglosslist, label="avg")
+                    plt.legend()
+                    plt.savefig(os.path.join(log_dir, "loss.png"))
+
+                    plt.figure(2)
+                    plt.xlabel("Epoch")
+                    plt.ylabel("Reward")
+                    plt.plot(range(len(rewardList)), rewardList, label="reward")
+                    plt.plot(range(len(rewardList)), avgrewardlist, label="avg")
+                    plt.legend()
+                    plt.savefig(os.path.join(log_dir, "reward.png"))
             break
 
     rewardList.append(total_reward)
@@ -285,13 +305,8 @@ for epoch in range(args["epoch"]):
     print(output)
     with open(log_path, "a") as f:
         f.write(f"{output}\n")
-
-    del done
-    del next_obs
-    del reward
-    del obs
-    del action
     torch.cuda.empty_cache()
+
 env.close()
 
 # plot loss-epoch and reward-epoch
