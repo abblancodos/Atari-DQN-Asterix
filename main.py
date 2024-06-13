@@ -50,17 +50,17 @@ args = {
     "epoch": 1000000,
     "batch-size": 32,
     "ddqn_store": True,
-    "eval_cycle": 5000,
+    "eval_cycle": 2000,
     "which_gpu": 0,
 }
 
 ddqn = 0
 # some hyperparameters
 GAMMA = 0.99  # bellman function
-EPS_START = 1
-EPS_END = 0.05
-EPS_DECAY = 50000
-WARMUP = 1000  # don't update net until WARMUP steps
+EPS_START = 10
+EPS_END = 0.005
+EPS_DECAY = 10000
+WARMUP = 3000  # don't update net until WARMUP steps
 
 steps_done = 0
 eps_threshold = EPS_START
@@ -93,8 +93,8 @@ def select_action(state: torch.Tensor) -> torch.Tensor:
 
 
 # environment
-env = gym.make("Asterix-v4")
-env = AtariWrapper(env)
+env = gym.make("AsterixNoFrameskip-v4")
+env = AtariWrapper(env=env, terminal_on_life_loss=False)
 
 n_action = env.action_space.n  # pong:6; breakout:4; boxing:18
 
@@ -249,7 +249,7 @@ for epoch in range(args["epoch"]):
             if epoch % args["eval_cycle"] == 0:
                 with torch.no_grad():
                     video.reset()
-                    evalenv = gym.make("Asterix-v4")
+                    evalenv = gym.make("AsterixNoFrameskip-v4")
                     evalenv = AtariWrapper(evalenv, video=video)
                     obs, info = evalenv.reset()
                     obs = torch.from_numpy(obs).to(args["which_gpu"])
