@@ -1,0 +1,19 @@
+2024-06-15 03:19:44,294 INFO    StreamThr :4954 [internal.py:wandb_internal():86] W&B internal server running at pid: 4954, started at: 2024-06-15 03:19:44.293307
+2024-06-15 03:19:44,298 DEBUG   HandlerThread:4954 [handler.py:handle_request():146] handle_request: status
+2024-06-15 03:19:44,307 INFO    WriterThread:4954 [datastore.py:open_for_write():87] open: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_031944-btxomq6s/run-btxomq6s.wandb
+2024-06-15 03:19:44,308 DEBUG   SenderThread:4954 [sender.py:send():379] send: header
+2024-06-15 03:19:44,315 DEBUG   SenderThread:4954 [sender.py:send():379] send: run
+2024-06-15 03:19:44,642 DEBUG   HandlerThread:4954 [handler.py:handle_request():146] handle_request: shutdown
+2024-06-15 03:19:44,642 INFO    HandlerThread:4954 [handler.py:finish():866] shutting down handler
+2024-06-15 03:19:44,697 INFO    SenderThread:4954 [dir_watcher.py:__init__():211] watching files in: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_031944-btxomq6s/files
+2024-06-15 03:19:44,697 INFO    SenderThread:4954 [sender.py:_start_run_threads():1124] run started: btxomq6s with start time 1718421584.292145
+2024-06-15 03:19:44,697 INFO    SenderThread:4954 [sender.py:finish():1546] shutting down sender
+2024-06-15 03:19:44,697 INFO    SenderThread:4954 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-06-15 03:19:45,315 INFO    WriterThread:4954 [datastore.py:close():296] close: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_031944-btxomq6s/run-btxomq6s.wandb
+2024-06-15 03:19:45,698 INFO    SenderThread:4954 [dir_watcher.py:finish():388] scan: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_031944-btxomq6s/files
+2024-06-15 03:19:45,698 INFO    SenderThread:4954 [dir_watcher.py:finish():402] scan save: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_031944-btxomq6s/files/config.yaml config.yaml
+2024-06-15 03:19:45,698 INFO    SenderThread:4954 [file_pusher.py:finish():172] shutting down file pusher
+2024-06-15 03:19:45,698 INFO    SenderThread:4954 [file_pusher.py:join():178] waiting for file pusher
+2024-06-15 03:19:46,357 INFO    wandb-upload_0:4954 [upload_job.py:push():131] Uploaded file /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_031944-btxomq6s/files/config.yaml
+2024-06-15 03:19:46,700 INFO    SenderThread:4954 [file_stream.py:finish():614] file stream finish called
+2024-06-15 03:19:46,885 INFO    SenderThread:4954 [file_stream.py:finish():618] file stream finish is done

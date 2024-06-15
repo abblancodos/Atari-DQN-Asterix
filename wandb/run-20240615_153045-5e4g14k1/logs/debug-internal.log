@@ -1,0 +1,19 @@
+2024-06-15 15:30:45,181 INFO    StreamThr :26830 [internal.py:wandb_internal():86] W&B internal server running at pid: 26830, started at: 2024-06-15 15:30:45.180316
+2024-06-15 15:30:45,185 DEBUG   HandlerThread:26830 [handler.py:handle_request():146] handle_request: status
+2024-06-15 15:30:45,195 INFO    WriterThread:26830 [datastore.py:open_for_write():87] open: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_153045-5e4g14k1/run-5e4g14k1.wandb
+2024-06-15 15:30:45,196 DEBUG   SenderThread:26830 [sender.py:send():379] send: header
+2024-06-15 15:30:45,204 DEBUG   SenderThread:26830 [sender.py:send():379] send: run
+2024-06-15 15:30:45,256 DEBUG   HandlerThread:26830 [handler.py:handle_request():146] handle_request: shutdown
+2024-06-15 15:30:45,256 INFO    HandlerThread:26830 [handler.py:finish():866] shutting down handler
+2024-06-15 15:30:45,561 INFO    SenderThread:26830 [dir_watcher.py:__init__():211] watching files in: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_153045-5e4g14k1/files
+2024-06-15 15:30:45,561 INFO    SenderThread:26830 [sender.py:_start_run_threads():1124] run started: 5e4g14k1 with start time 1718465445.179258
+2024-06-15 15:30:45,562 INFO    SenderThread:26830 [sender.py:finish():1546] shutting down sender
+2024-06-15 15:30:45,562 INFO    SenderThread:26830 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-06-15 15:30:46,204 INFO    WriterThread:26830 [datastore.py:close():296] close: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_153045-5e4g14k1/run-5e4g14k1.wandb
+2024-06-15 15:30:46,562 INFO    SenderThread:26830 [dir_watcher.py:finish():388] scan: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_153045-5e4g14k1/files
+2024-06-15 15:30:46,562 INFO    SenderThread:26830 [dir_watcher.py:finish():402] scan save: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_153045-5e4g14k1/files/config.yaml config.yaml
+2024-06-15 15:30:46,562 INFO    SenderThread:26830 [file_pusher.py:finish():172] shutting down file pusher
+2024-06-15 15:30:46,562 INFO    SenderThread:26830 [file_pusher.py:join():178] waiting for file pusher
+2024-06-15 15:30:47,183 INFO    wandb-upload_0:26830 [upload_job.py:push():131] Uploaded file /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_153045-5e4g14k1/files/config.yaml
+2024-06-15 15:30:47,564 INFO    SenderThread:26830 [file_stream.py:finish():614] file stream finish called
+2024-06-15 15:30:47,753 INFO    SenderThread:26830 [file_stream.py:finish():618] file stream finish is done

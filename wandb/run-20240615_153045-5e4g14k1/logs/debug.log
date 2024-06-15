@@ -1,0 +1,22 @@
+2024-06-15 15:30:45,169 INFO    Thread-8 (_run_job):25693 [wandb_setup.py:_flush():76] Current SDK version is 0.16.5
+2024-06-15 15:30:45,169 INFO    Thread-8 (_run_job):25693 [wandb_setup.py:_flush():76] Configure stats pid to 25693
+2024-06-15 15:30:45,169 INFO    Thread-8 (_run_job):25693 [wandb_setup.py:_flush():76] Loading settings from /root/.config/wandb/settings
+2024-06-15 15:30:45,169 INFO    Thread-8 (_run_job):25693 [wandb_setup.py:_flush():76] Loading settings from /root/aprendi/Atari-DQN-Asterix/wandb/settings
+2024-06-15 15:30:45,169 INFO    Thread-8 (_run_job):25693 [wandb_setup.py:_flush():76] Loading settings from environment variables: {'project': 'AA_Asterix_Optim', 'entity': 'aa_p2', 'root_dir': '/root/aprendi/Atari-DQN-Asterix', 'run_id': '5e4g14k1', 'sweep_param_path': '/root/aprendi/Atari-DQN-Asterix/wandb/sweep-5sc2qbar/config-5e4g14k1.yaml', 'sweep_id': '5sc2qbar'}
+2024-06-15 15:30:45,169 INFO    Thread-8 (_run_job):25693 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-06-15 15:30:45,169 INFO    Thread-8 (_run_job):25693 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'train_4_k80s.py', 'program_abspath': '/root/aprendi/Atari-DQN-Asterix/train_4_k80s.py', 'program': '/root/aprendi/Atari-DQN-Asterix/train_4_k80s.py'}
+2024-06-15 15:30:45,169 INFO    Thread-8 (_run_job):25693 [wandb_setup.py:_flush():76] Applying login settings: {}
+2024-06-15 15:30:45,169 INFO    Thread-8 (_run_job):25693 [wandb_init.py:_log_setup():527] Logging user logs to /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_153045-5e4g14k1/logs/debug.log
+2024-06-15 15:30:45,169 INFO    Thread-8 (_run_job):25693 [wandb_init.py:_log_setup():528] Logging internal logs to /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_153045-5e4g14k1/logs/debug-internal.log
+2024-06-15 15:30:45,169 INFO    Thread-8 (_run_job):25693 [wandb_init.py:init():567] calling init triggers
+2024-06-15 15:30:45,170 INFO    Thread-8 (_run_job):25693 [wandb_init.py:init():574] wandb.init called with sweep_config: {'EPS_DECAY': 93597, 'EPS_END': 0.008058191863266506, 'EPS_START': 0.3263644211378115, 'EVAL_CYCLE': 2545, 'REPLAY_MEMORY': 695959, 'WARMUP': 26151, 'batchsize': 35, 'gamma': 0.929735502837276, 'lr': 0.0148029557924478}
+config: {'name': 'Asterix Sweep final', 'method': 'bayes', 'metric': {'goal': 'maximize', 'name': 'avgreward'}, 'parameters': {'batchsize': {'min': 32, 'max': 64}, 'lr': {'min': 2e-05, 'max': 0.02}, 'gamma': {'min': 0.9, 'max': 0.9999}, 'EPS_END': {'min': 1e-05, 'max': 0.01}, 'EPS_DECAY': {'min': 10000, 'max': 200000}, 'EPS_START': {'min': 0.1, 'max': 1.0}, 'WARMUP': {'min': 100, 'max': 50000}, 'EVAL_CYCLE': {'min': 500, 'max': 3000}, 'REPLAY_MEMORY': {'min': 100000, 'max': 1000000}}}
+2024-06-15 15:30:45,170 INFO    Thread-8 (_run_job):25693 [wandb_init.py:init():617] starting backend
+2024-06-15 15:30:45,170 INFO    Thread-8 (_run_job):25693 [wandb_init.py:init():621] setting up manager
+2024-06-15 15:30:45,178 INFO    Thread-8 (_run_job):25693 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2024-06-15 15:30:45,179 INFO    Thread-8 (_run_job):25693 [wandb_init.py:init():629] backend started and connected
+2024-06-15 15:30:45,194 INFO    Thread-8 (_run_job):25693 [wandb_run.py:_config_callback():1347] config_cb None None {'EPS_DECAY': 93597, 'EPS_END': 0.008058191863266506, 'EPS_START': 0.3263644211378115, 'EVAL_CYCLE': 2545, 'REPLAY_MEMORY': 695959, 'WARMUP': 26151, 'batchsize': 35, 'gamma': 0.929735502837276, 'lr': 0.0148029557924478}
+2024-06-15 15:30:45,195 INFO    Thread-8 (_run_job):25693 [wandb_init.py:init():721] updated telemetry
+2024-06-15 15:30:45,202 INFO    Thread-8 (_run_job):25693 [wandb_init.py:init():754] communicating run to backend with 90.0 second timeout
+2024-06-15 15:30:45,578 INFO    Thread-8 (_run_job):25693 [wandb_run.py:_on_init():2344] communicating current version
+2024-06-15 15:30:47,754 WARNING MsgRouterThr:25693 [router.py:message_loop():77] message_loop has been closed

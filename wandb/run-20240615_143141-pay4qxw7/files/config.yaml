@@ -1,0 +1,83 @@
+wandb_version: 1
+
+name:
+  desc: null
+  value: Asterix Sweep Config 30000-2
+method:
+  desc: null
+  value: bayes
+metric:
+  desc: null
+  value:
+    goal: maximize
+    name: avgreward
+parameters:
+  desc: null
+  value:
+    batchsize:
+      min: 32
+      max: 64
+    lr:
+      min: 2.0e-05
+      max: 0.02
+    gamma:
+      min: 0.9
+      max: 0.9999
+    EPS_END:
+      min: 1.0e-05
+      max: 0.01
+    EPS_DECAY:
+      min: 10000
+      max: 200000
+    EPS_START:
+      min: 1
+      max: 300
+    WARMUP:
+      min: 100
+      max: 50000
+_wandb:
+  desc: null
+  value:
+    python_version: 3.10.14
+    cli_version: 0.16.5
+    framework: torch
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    start_time: 1718461901.0
+    t:
+      1:
+      - 1
+      - 55
+      2:
+      - 1
+      - 55
+      3:
+      - 16
+      - 23
+      - 37
+      4: 3.10.14
+      5: 0.16.5
+      8:
+      - 5
+      13: linux-x86_64
+EPS_DECAY:
+  desc: null
+  value: 75899
+EPS_END:
+  desc: null
+  value: 0.00070406813718082
+EPS_START:
+  desc: null
+  value: 219
+WARMUP:
+  desc: null
+  value: 42221
+batchsize:
+  desc: null
+  value: 56
+gamma:
+  desc: null
+  value: 0.9277504245261609
+lr:
+  desc: null
+  value: 0.011457799510265683

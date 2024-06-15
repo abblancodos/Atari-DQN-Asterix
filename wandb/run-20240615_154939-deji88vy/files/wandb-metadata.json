@@ -1,0 +1,380 @@
+{
+    "os": "Linux-5.15.0-105-generic-x86_64-with-glibc2.35",
+    "python": "3.10.14",
+    "heartbeatAt": "2024-06-15T15:49:40.403143",
+    "startedAt": "2024-06-15T15:49:39.758514",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/root/aprendi/Atari-DQN-Asterix/train_4_k80s.py",
+    "codePathLocal": "train_4_k80s.py",
+    "codePath": "train_4_k80s.py",
+    "git": {
+        "remote": "https://github.com/abblancodos/Atari-DQN-Asterix.git",
+        "commit": "1324cd987a98bfd54d495e351ed05fc778308f81"
+    },
+    "email": null,
+    "root": "/root/aprendi/Atari-DQN-Asterix",
+    "host": "8c9fc6cd6ff2",
+    "username": "root",
+    "executable": "/root/micromamba/envs/asterix/bin/python3",
+    "cpu_count": 32,
+    "cpu_count_logical": 64,
+    "cpu_freq": {
+        "current": 1643.1553749999998,
+        "min": 1500.0,
+        "max": 2400.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 1500.0,
+            "min": 1500.0,
+            "max": 2400.0
+        },
+        {
+            "current": 1500.0,
+            "min": 1500.0,
+            "max": 2400.0
+        },
+        {
+            "current": 1500.0,
+            "min": 1500.0,
+            "max": 2400.0
+        },
+        {
+            "current": 1500.0,
+            "min": 1500.0,
+            "max": 2400.0
+        },
+        {
+            "current": 1500.0,
+            "min": 1500.0,
+            "max": 2400.0
+        },
+        {
+            "current": 1500.0,
+            "min": 1500.0,
+            "max": 2400.0
+        },
+        {
+            "current": 1500.0,
+            "min": 1500.0,
+            "max": 2400.0
+        },
+        {
+            "current": 1500.0,
+            "min": 1500.0,
+            "max": 2400.0
+        },
+        {
+            "current": 1500.0,
+            "min": 1500.0,
+            "max": 2400.0
+        },
+        {
+            "current": 1500.0,
+            "min": 1500.0,
+            "max": 2400.0
+        },
+        {
+            "current": 1500.0,
+            "min": 1500.0,
+            "max": 2400.0
+        },
+        {
+            "current": 1500.0,
+            "min": 1500.0,
+            "max": 2400.0
+        },
+        {
+            "current": 1500.0,
+            "min": 1500.0,
+            "max": 2400.0
+        },
+        {
+            "current": 1500.0,
+            "min": 1500.0,
+            "max": 2400.0
+        },
+        {
+            "current": 1500.0,
+            "min": 1500.0,
+            "max": 2400.0
+        },
+        {
+            "current": 2400.0,
+            "min": 1500.0,
+            "max": 2400.0
+        },
+        {
+            "current": 1500.0,
+            "min": 1500.0,
+            "max": 2400.0
+        },
+        {
+            "current": 3291.06,
+            "min": 1500.0,
+            "max": 2400.0
+        },
+        {
+            "current": 1500.0,
+            "min": 1500.0,
+            "max": 2400.0
+        },
+        {
+            "current": 1500.0,
+            "min": 1500.0,
+            "max": 2400.0
+        },
+        {
+            "current": 1500.0,
+            "min": 1500.0,
+            "max": 2400.0
+        },
+        {
+            "current": 1500.0,
+            "min": 1500.0,
+            "max": 2400.0
+        },
+        {
+            "current": 1499.885,
+            "min": 1500.0,
+            "max": 2400.0
+        },
+        {
+            "current": 1500.0,
+            "min": 1500.0,
+            "max": 2400.0
+        },
+        {
+            "current": 1500.0,
+            "min": 1500.0,
+            "max": 2400.0
+        },
+        {
+            "current": 1500.0,
+            "min": 1500.0,
+            "max": 2400.0
+        },
+        {
+            "current": 1500.0,
+            "min": 1500.0,
+            "max": 2400.0
+        },
+        {
+            "current": 1500.0,
+            "min": 1500.0,
+            "max": 2400.0
+        },
+        {
+            "current": 1500.0,
+            "min": 1500.0,
+            "max": 2400.0
+        },
+        {
+            "current": 1500.0,
+            "min": 1500.0,
+            "max": 2400.0
+        },
+        {
+            "current": 1500.0,
+            "min": 1500.0,
+            "max": 2400.0
+        },
+        {
+            "current": 1500.0,
+            "min": 1500.0,
+            "max": 2400.0
+        },
+        {
+            "current": 1500.0,
+            "min": 1500.0,
+            "max": 2400.0
+        },
+        {
+            "current": 1500.0,
+            "min": 1500.0,
+            "max": 2400.0
+        },
+        {
+            "current": 2000.0,
+            "min": 1500.0,
+            "max": 2400.0
+        },
+        {
+            "current": 1500.0,
+            "min": 1500.0,
+            "max": 2400.0
+        },
+        {
+            "current": 1500.0,
+            "min": 1500.0,
+            "max": 2400.0
+        },
+        {
+            "current": 1500.0,
+            "min": 1500.0,
+            "max": 2400.0
+        },
+        {
+            "current": 1546.035,
+            "min": 1500.0,
+            "max": 2400.0
+        },
+        {
+            "current": 1500.0,
+            "min": 1500.0,
+            "max": 2400.0
+        },
+        {
+            "current": 1500.0,
+            "min": 1500.0,
+            "max": 2400.0
+        },
+        {
+            "current": 1500.0,
+            "min": 1500.0,
+            "max": 2400.0
+        },
+        {
+            "current": 2000.0,
+            "min": 1500.0,
+            "max": 2400.0
+        },
+        {
+            "current": 1500.0,
+            "min": 1500.0,
+            "max": 2400.0
+        },
+        {
+            "current": 2400.0,
+            "min": 1500.0,
+            "max": 2400.0
+        },
+        {
+            "current": 3291.703,
+            "min": 1500.0,
+            "max": 2400.0
+        },
+        {
+            "current": 1500.0,
+            "min": 1500.0,
+            "max": 2400.0
+        },
+        {
+            "current": 1500.0,
+            "min": 1500.0,
+            "max": 2400.0
+        },
+        {
+            "current": 1500.0,
+            "min": 1500.0,
+            "max": 2400.0
+        },
+        {
+            "current": 1500.0,
+            "min": 1500.0,
+            "max": 2400.0
+        },
+        {
+            "current": 1500.0,
+            "min": 1500.0,
+            "max": 2400.0
+        },
+        {
+            "current": 2400.0,
+            "min": 1500.0,
+            "max": 2400.0
+        },
+        {
+            "current": 1500.0,
+            "min": 1500.0,
+            "max": 2400.0
+        },
+        {
+            "current": 1500.0,
+            "min": 1500.0,
+            "max": 2400.0
+        },
+        {
+            "current": 1500.0,
+            "min": 1500.0,
+            "max": 2400.0
+        },
+        {
+            "current": 2000.0,
+            "min": 1500.0,
+            "max": 2400.0
+        },
+        {
+            "current": 1500.0,
+            "min": 1500.0,
+            "max": 2400.0
+        },
+        {
+            "current": 1500.0,
+            "min": 1500.0,
+            "max": 2400.0
+        },
+        {
+            "current": 2000.0,
+            "min": 1500.0,
+            "max": 2400.0
+        },
+        {
+            "current": 1500.0,
+            "min": 1500.0,
+            "max": 2400.0
+        },
+        {
+            "current": 2400.0,
+            "min": 1500.0,
+            "max": 2400.0
+        },
+        {
+            "current": 1500.0,
+            "min": 1500.0,
+            "max": 2400.0
+        },
+        {
+            "current": 1500.0,
+            "min": 1500.0,
+            "max": 2400.0
+        },
+        {
+            "current": 1500.0,
+            "min": 1500.0,
+            "max": 2400.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 68.0,
+            "used": 36.85114288330078
+        }
+    },
+    "gpu": "NVIDIA RTX A4000",
+    "gpu_count": 4,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA RTX A4000",
+            "memory_total": 17171480576
+        },
+        {
+            "name": "NVIDIA RTX A4000",
+            "memory_total": 17171480576
+        },
+        {
+            "name": "NVIDIA RTX A4000",
+            "memory_total": 17171480576
+        },
+        {
+            "name": "NVIDIA RTX A4000",
+            "memory_total": 17171480576
+        }
+    ],
+    "memory": {
+        "total": 251.55624389648438
+    }
+}

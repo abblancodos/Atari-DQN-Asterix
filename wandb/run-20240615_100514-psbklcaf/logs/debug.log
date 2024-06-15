@@ -1,0 +1,36 @@
+2024-06-15 10:05:14,261 INFO    Thread-8 (_run_job):18291 [wandb_setup.py:_flush():76] Current SDK version is 0.16.5
+2024-06-15 10:05:14,261 INFO    Thread-8 (_run_job):18291 [wandb_setup.py:_flush():76] Configure stats pid to 18291
+2024-06-15 10:05:14,261 INFO    Thread-8 (_run_job):18291 [wandb_setup.py:_flush():76] Loading settings from /root/.config/wandb/settings
+2024-06-15 10:05:14,261 INFO    Thread-8 (_run_job):18291 [wandb_setup.py:_flush():76] Loading settings from /root/aprendi/Atari-DQN-Asterix/wandb/settings
+2024-06-15 10:05:14,261 INFO    Thread-8 (_run_job):18291 [wandb_setup.py:_flush():76] Loading settings from environment variables: {'project': 'AA_Asterix_Optim', 'entity': 'aa_p2', 'root_dir': '/root/aprendi/Atari-DQN-Asterix', 'run_id': 'psbklcaf', 'sweep_param_path': '/root/aprendi/Atari-DQN-Asterix/wandb/sweep-7r99rcn6/config-psbklcaf.yaml', 'sweep_id': '7r99rcn6'}
+2024-06-15 10:05:14,261 INFO    Thread-8 (_run_job):18291 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-06-15 10:05:14,262 INFO    Thread-8 (_run_job):18291 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'train_4_k80s.py', 'program_abspath': '/root/aprendi/Atari-DQN-Asterix/train_4_k80s.py', 'program': '/root/aprendi/Atari-DQN-Asterix/train_4_k80s.py'}
+2024-06-15 10:05:14,262 INFO    Thread-8 (_run_job):18291 [wandb_setup.py:_flush():76] Applying login settings: {}
+2024-06-15 10:05:14,262 INFO    Thread-8 (_run_job):18291 [wandb_init.py:_log_setup():527] Logging user logs to /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_100514-psbklcaf/logs/debug.log
+2024-06-15 10:05:14,262 INFO    Thread-8 (_run_job):18291 [wandb_init.py:_log_setup():528] Logging internal logs to /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_100514-psbklcaf/logs/debug-internal.log
+2024-06-15 10:05:14,262 INFO    Thread-8 (_run_job):18291 [wandb_init.py:init():567] calling init triggers
+2024-06-15 10:05:14,262 INFO    Thread-8 (_run_job):18291 [wandb_init.py:init():574] wandb.init called with sweep_config: {'EPS_DECAY': 178650, 'EPS_END': 0.005653129423252979, 'EPS_START': 224, 'WARMUP': 3851, 'batchsize': 43, 'gamma': 0.987029757129502, 'lr': 0.01489732583642747}
+config: {'name': 'Asterix Sweep Config', 'method': 'bayes', 'metric': {'goal': 'minimize', 'name': 'avgloss'}, 'parameters': {'batchsize': {'min': 32, 'max': 64}, 'lr': {'min': 2e-05, 'max': 0.02}, 'gamma': {'min': 0.9, 'max': 0.9999}, 'EPS_END': {'min': 1e-05, 'max': 0.01}, 'EPS_DECAY': {'min': 10000, 'max': 200000}, 'EPS_START': {'min': 1, 'max': 300}, 'WARMUP': {'min': 100, 'max': 50000}}}
+2024-06-15 10:05:14,262 INFO    Thread-8 (_run_job):18291 [wandb_init.py:init():617] starting backend
+2024-06-15 10:05:14,262 INFO    Thread-8 (_run_job):18291 [wandb_init.py:init():621] setting up manager
+2024-06-15 10:05:14,270 INFO    Thread-8 (_run_job):18291 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2024-06-15 10:05:14,271 INFO    Thread-8 (_run_job):18291 [wandb_init.py:init():629] backend started and connected
+2024-06-15 10:05:14,285 INFO    Thread-8 (_run_job):18291 [wandb_run.py:_config_callback():1347] config_cb None None {'EPS_DECAY': 178650, 'EPS_END': 0.005653129423252979, 'EPS_START': 224, 'WARMUP': 3851, 'batchsize': 43, 'gamma': 0.987029757129502, 'lr': 0.01489732583642747}
+2024-06-15 10:05:14,286 INFO    Thread-8 (_run_job):18291 [wandb_init.py:init():721] updated telemetry
+2024-06-15 10:05:14,293 INFO    Thread-8 (_run_job):18291 [wandb_init.py:init():754] communicating run to backend with 90.0 second timeout
+2024-06-15 10:05:14,678 INFO    Thread-8 (_run_job):18291 [wandb_run.py:_on_init():2344] communicating current version
+2024-06-15 10:05:14,789 INFO    Thread-8 (_run_job):18291 [wandb_run.py:_on_init():2353] got version response upgrade_message: "wandb version 0.17.1 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2024-06-15 10:05:14,789 INFO    Thread-8 (_run_job):18291 [wandb_init.py:init():805] starting run threads in backend
+2024-06-15 10:05:15,008 INFO    Thread-8 (_run_job):18291 [wandb_run.py:_console_start():2323] atexit reg
+2024-06-15 10:05:15,008 INFO    Thread-8 (_run_job):18291 [wandb_run.py:_redirect():2178] redirect: wrap_raw
+2024-06-15 10:05:15,008 INFO    Thread-8 (_run_job):18291 [wandb_run.py:_redirect():2243] Wrapping output streams.
+2024-06-15 10:05:15,008 INFO    Thread-8 (_run_job):18291 [wandb_run.py:_redirect():2268] Redirects installed.
+2024-06-15 10:05:15,009 INFO    Thread-8 (_run_job):18291 [wandb_init.py:init():848] run started, returning control to user process
+2024-06-15 11:56:08,133 INFO    Thread-8 (_run_job):18291 [wandb_run.py:_finish():2052] finishing run aa_p2/AA_Asterix_Optim/psbklcaf
+2024-06-15 11:56:08,134 INFO    Thread-8 (_run_job):18291 [wandb_run.py:_atexit_cleanup():2292] got exitcode: 0
+2024-06-15 11:56:08,135 INFO    Thread-8 (_run_job):18291 [wandb_run.py:_restore():2275] restore
+2024-06-15 11:56:08,137 INFO    Thread-8 (_run_job):18291 [wandb_run.py:_restore():2281] restore done
+2024-06-15 11:56:13,686 INFO    Thread-8 (_run_job):18291 [wandb_run.py:_footer_history_summary_info():3920] rendering history
+2024-06-15 11:56:13,689 INFO    Thread-8 (_run_job):18291 [wandb_run.py:_footer_history_summary_info():3952] rendering summary
+2024-06-15 11:56:13,703 INFO    Thread-8 (_run_job):18291 [wandb_run.py:_footer_sync_info():3879] logging synced files

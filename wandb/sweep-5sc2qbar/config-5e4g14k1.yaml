@@ -1,0 +1,20 @@
+wandb_version: 1
+
+EPS_DECAY:
+  value: 93597
+EPS_END:
+  value: 0.008058191863266506
+EPS_START:
+  value: 0.3263644211378115
+EVAL_CYCLE:
+  value: 2545
+REPLAY_MEMORY:
+  value: 695959
+WARMUP:
+  value: 26151
+batchsize:
+  value: 35
+gamma:
+  value: 0.929735502837276
+lr:
+  value: 0.0148029557924478

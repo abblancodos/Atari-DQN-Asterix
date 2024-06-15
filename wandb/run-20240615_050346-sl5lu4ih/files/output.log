@@ -1,0 +1,9 @@
+couldn't find initialization file, model started empty
+Warming up...
+Eval epoch 0: Reward 13.0
+Epoch 0: Loss 1.74, Reward 2.0, Avgloss 1.74, Avgreward 2.00, Epsilon 86.02, TotalStep 205
+Epoch 1: Loss 2.23, Reward 5.0, Avgloss 1.99, Avgreward 3.50, Epsilon 84.01, TotalStep 418
+Epoch 2: Loss 2.98, Reward 6.0, Avgloss 2.32, Avgreward 4.33, Epsilon 81.17, TotalStep 726
+Epoch 3: Loss 1.73, Reward 1.0, Avgloss 2.17, Avgreward 3.50, Epsilon 79.36, TotalStep 929
+Epoch 4: Loss 1.60, Reward 4.0, Avgloss 2.06, Avgreward 3.60, Epsilon 77.70, TotalStep 1119
+[34m[1mwandb[39m[22m: Ctrl + C detected. Stopping sweep.

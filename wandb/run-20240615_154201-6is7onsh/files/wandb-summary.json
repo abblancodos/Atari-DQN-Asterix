@@ -1,0 +1,1 @@
+{"Epoch": 300, "Loss": 1.9801395411914144, "Reward": 3.0, "Average Loss": 2.7307374748807107, "Average Reward": 4.07, "Epsilon": 0.38697248184080457, "_timestamp": 1718466480.4565842, "_runtime": 358.9980311393738, "_step": 300, "_wandb": {"runtime": 359}}

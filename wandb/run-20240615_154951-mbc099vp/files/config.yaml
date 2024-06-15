@@ -1,0 +1,96 @@
+wandb_version: 1
+
+name:
+  desc: null
+  value: Asterix Sweep less mem
+method:
+  desc: null
+  value: bayes
+metric:
+  desc: null
+  value:
+    goal: maximize
+    name: avgreward
+parameters:
+  desc: null
+  value:
+    batchsize:
+      min: 32
+      max: 64
+    lr:
+      min: 2.0e-05
+      max: 0.02
+    gamma:
+      min: 0.9
+      max: 0.9999
+    EPS_END:
+      min: 1.0e-05
+      max: 0.01
+    EPS_DECAY:
+      min: 10000
+      max: 200000
+    EPS_START:
+      min: 0.1
+      max: 1.0
+    WARMUP:
+      min: 100
+      max: 50000
+    EVAL_CYCLE:
+      min: 500
+      max: 3000
+    REPLAY_MEMORY:
+      min: 100000
+      max: 350000
+_wandb:
+  desc: null
+  value:
+    python_version: 3.10.14
+    cli_version: 0.16.5
+    framework: torch
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    start_time: 1718466592.0
+    t:
+      1:
+      - 1
+      - 55
+      2:
+      - 1
+      - 55
+      3:
+      - 2
+      - 16
+      - 23
+      - 37
+      4: 3.10.14
+      5: 0.16.5
+      8:
+      - 5
+      13: linux-x86_64
+EPS_DECAY:
+  desc: null
+  value: 88910
+EPS_END:
+  desc: null
+  value: 0.0028261093787402157
+EPS_START:
+  desc: null
+  value: 0.3969501878290273
+EVAL_CYCLE:
+  desc: null
+  value: 1319
+REPLAY_MEMORY:
+  desc: null
+  value: 181029
+WARMUP:
+  desc: null
+  value: 23060
+batchsize:
+  desc: null
+  value: 34
+gamma:
+  desc: null
+  value: 0.9813291667099604
+lr:
+  desc: null
+  value: 0.013545984846386108

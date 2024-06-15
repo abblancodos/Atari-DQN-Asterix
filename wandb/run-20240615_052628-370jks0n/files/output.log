@@ -1,0 +1,30 @@
+
+Warming up...
+Eval epoch 0: Reward 1.0
+Epoch 0: Loss 1.88, Reward 1.0, Avgloss 1.88, Avgreward 1.00, Epsilon 1.04, TotalStep 213
+Epoch 1: Loss 1.95, Reward 3.0, Avgloss 1.91, Avgreward 2.00, Epsilon 2.19, TotalStep 456
+Epoch 2: Loss 1.67, Reward 3.0, Avgloss 1.83, Avgreward 2.33, Epsilon 3.18, TotalStep 664
+Epoch 3: Loss 1.58, Reward 3.0, Avgloss 1.77, Avgreward 2.50, Epsilon 4.11, TotalStep 861
+Epoch 4: Loss 1.74, Reward 3.0, Avgloss 1.77, Avgreward 2.60, Epsilon 5.15, TotalStep 1081
+Epoch 5: Loss 3.25, Reward 9.0, Avgloss 2.01, Avgreward 3.67, Epsilon 6.97, TotalStep 1466
+Epoch 6: Loss 1.85, Reward 3.0, Avgloss 1.99, Avgreward 3.57, Epsilon 8.04, TotalStep 1693
+Epoch 7: Loss 1.75, Reward 0.0, Avgloss 1.96, Avgreward 3.12, Epsilon 9.03, TotalStep 1902
+Epoch 8: Loss 1.42, Reward 2.0, Avgloss 1.90, Avgreward 3.00, Epsilon 9.98, TotalStep 2105
+Epoch 9: Loss 1.78, Reward 3.0, Avgloss 1.89, Avgreward 3.00, Epsilon 11.01, TotalStep 2323
+Epoch 10: Loss 1.57, Reward 2.0, Avgloss 1.86, Avgreward 2.91, Epsilon 11.90, TotalStep 2512
+Epoch 11: Loss 1.60, Reward 1.0, Avgloss 1.84, Avgreward 2.75, Epsilon 12.84, TotalStep 2713
+Epoch 12: Loss 1.65, Reward 6.0, Avgloss 1.82, Avgreward 3.00, Epsilon 13.93, TotalStep 2947
+Epoch 13: Loss 1.41, Reward 2.0, Avgloss 1.79, Avgreward 2.93, Epsilon 14.75, TotalStep 3121
+Epoch 14: Loss 3.10, Reward 10.0, Avgloss 1.88, Avgreward 3.40, Epsilon 16.38, TotalStep 3471
+Epoch 15: Loss 1.83, Reward 2.0, Avgloss 1.88, Avgreward 3.31, Epsilon 17.36, TotalStep 3681
+Epoch 16: Loss 2.54, Reward 3.0, Avgloss 1.92, Avgreward 3.29, Epsilon 18.79, TotalStep 3987
+Epoch 17: Loss 2.66, Reward 2.0, Avgloss 1.96, Avgreward 3.22, Epsilon 19.83, TotalStep 4210
+Epoch 18: Loss 2.06, Reward 2.0, Avgloss 1.96, Avgreward 3.16, Epsilon 20.89, TotalStep 4438
+Epoch 19: Loss 3.23, Reward 7.0, Avgloss 2.03, Avgreward 3.35, Epsilon 22.54, TotalStep 4794
+Epoch 20: Loss 1.68, Reward 1.0, Avgloss 2.01, Avgreward 3.24, Epsilon 23.50, TotalStep 5002
+Epoch 21: Loss 2.45, Reward 7.0, Avgloss 2.03, Avgreward 3.41, Epsilon 25.02, TotalStep 5329
+Epoch 22: Loss 2.10, Reward 6.0, Avgloss 2.03, Avgreward 3.52, Epsilon 26.28, TotalStep 5602
+Epoch 23: Loss 1.83, Reward 5.0, Avgloss 2.02, Avgreward 3.58, Epsilon 27.35, TotalStep 5835
+Epoch 24: Loss 1.63, Reward 1.0, Avgloss 2.01, Avgreward 3.48, Epsilon 28.25, TotalStep 6031
+Epoch 25: Loss 1.50, Reward 3.0, Avgloss 1.99, Avgreward 3.46, Epsilon 29.20, TotalStep 6236
+[34m[1mwandb[39m[22m: Ctrl + C detected. Stopping sweep.

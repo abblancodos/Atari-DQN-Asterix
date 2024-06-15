@@ -1,0 +1,820 @@
+2024-06-15 18:09:15,908 INFO    StreamThr :31722 [internal.py:wandb_internal():86] W&B internal server running at pid: 31722, started at: 2024-06-15 18:09:15.907115
+2024-06-15 18:09:15,913 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: status
+2024-06-15 18:09:15,918 INFO    WriterThread:31722 [datastore.py:open_for_write():87] open: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/run-llnpjdz5.wandb
+2024-06-15 18:09:15,919 DEBUG   SenderThread:31722 [sender.py:send():379] send: header
+2024-06-15 18:09:15,926 DEBUG   SenderThread:31722 [sender.py:send():379] send: run
+2024-06-15 18:09:16,318 INFO    SenderThread:31722 [dir_watcher.py:__init__():211] watching files in: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files
+2024-06-15 18:09:16,318 INFO    SenderThread:31722 [sender.py:_start_run_threads():1124] run started: llnpjdz5 with start time 1718474955.90649
+2024-06-15 18:09:16,341 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: check_version
+2024-06-15 18:09:16,342 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: check_version
+2024-06-15 18:09:16,456 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: run_start
+2024-06-15 18:09:16,487 DEBUG   HandlerThread:31722 [system_info.py:__init__():26] System info init
+2024-06-15 18:09:16,487 DEBUG   HandlerThread:31722 [system_info.py:__init__():41] System info init done
+2024-06-15 18:09:16,487 INFO    HandlerThread:31722 [system_monitor.py:start():194] Starting system monitor
+2024-06-15 18:09:16,488 INFO    SystemMonitor:31722 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-06-15 18:09:16,488 INFO    HandlerThread:31722 [system_monitor.py:probe():214] Collecting system info
+2024-06-15 18:09:16,489 INFO    SystemMonitor:31722 [interfaces.py:start():190] Started cpu monitoring
+2024-06-15 18:09:16,491 INFO    SystemMonitor:31722 [interfaces.py:start():190] Started disk monitoring
+2024-06-15 18:09:16,492 INFO    SystemMonitor:31722 [interfaces.py:start():190] Started gpu monitoring
+2024-06-15 18:09:16,493 INFO    SystemMonitor:31722 [interfaces.py:start():190] Started memory monitoring
+2024-06-15 18:09:16,494 INFO    SystemMonitor:31722 [interfaces.py:start():190] Started network monitoring
+2024-06-15 18:09:16,555 DEBUG   HandlerThread:31722 [system_info.py:probe():150] Probing system
+2024-06-15 18:09:16,557 DEBUG   HandlerThread:31722 [system_info.py:_probe_git():135] Probing git
+2024-06-15 18:09:16,567 DEBUG   HandlerThread:31722 [system_info.py:_probe_git():143] Probing git done
+2024-06-15 18:09:16,567 DEBUG   HandlerThread:31722 [system_info.py:probe():198] Probing system done
+2024-06-15 18:09:16,567 DEBUG   HandlerThread:31722 [system_monitor.py:probe():223] {'os': 'Linux-5.15.0-105-generic-x86_64-with-glibc2.35', 'python': '3.10.14', 'heartbeatAt': '2024-06-15T18:09:16.555155', 'startedAt': '2024-06-15T18:09:15.896436', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/root/aprendi/Atari-DQN-Asterix/train_4_k80s.py', 'codePathLocal': 'train_4_k80s.py', 'codePath': 'train_4_k80s.py', 'git': {'remote': 'https://github.com/abblancodos/Atari-DQN-Asterix.git', 'commit': '1324cd987a98bfd54d495e351ed05fc778308f81'}, 'email': None, 'root': '/root/aprendi/Atari-DQN-Asterix', 'host': '8c9fc6cd6ff2', 'username': 'root', 'executable': '/root/micromamba/envs/asterix/bin/python3', 'cpu_count': 32, 'cpu_count_logical': 64, 'cpu_freq': {'current': 1556.38521875, 'min': 1500.0, 'max': 2400.0}, 'cpu_freq_per_core': [{'current': 1500.0, 'min': 1500.0, 'max': 2400.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2400.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2400.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2400.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2400.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2400.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2000.0, 'min': 1500.0, 'max': 2400.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2400.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2400.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2400.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2400.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2400.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2400.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2400.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2400.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2400.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2400.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2400.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2400.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2400.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2400.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2400.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2000.0, 'min': 1500.0, 'max': 2400.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2400.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2400.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2400.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2400.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2400.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2400.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2400.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2400.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2400.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2400.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2400.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2400.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2400.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2400.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2400.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2400.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2400.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2400.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2400.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2400.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2400.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2400.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2400.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2400.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2400.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2400.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2400.0}, {'current': 1497.696, 'min': 1500.0, 'max': 2400.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2400.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2400.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2400.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2400.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2400.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2400.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2400.0}], 'disk': {'/': {'total': 68.0, 'used': 36.8950080871582}}, 'gpu': 'NVIDIA RTX A4000', 'gpu_count': 4, 'gpu_devices': [{'name': 'NVIDIA RTX A4000', 'memory_total': 17171480576}, {'name': 'NVIDIA RTX A4000', 'memory_total': 17171480576}, {'name': 'NVIDIA RTX A4000', 'memory_total': 17171480576}, {'name': 'NVIDIA RTX A4000', 'memory_total': 17171480576}], 'memory': {'total': 251.55624389648438}}
+2024-06-15 18:09:16,567 INFO    HandlerThread:31722 [system_monitor.py:probe():224] Finished collecting system info
+2024-06-15 18:09:16,567 INFO    HandlerThread:31722 [system_monitor.py:probe():227] Publishing system info
+2024-06-15 18:09:16,567 DEBUG   HandlerThread:31722 [system_info.py:_save_conda():207] Saving list of conda packages installed into the current environment
+2024-06-15 18:09:16,569 ERROR   HandlerThread:31722 [system_info.py:_save_conda():221] Error saving conda packages: [Errno 2] No such file or directory: 'conda'
+Traceback (most recent call last):
+  File "/root/micromamba/envs/asterix/lib/python3.10/site-packages/wandb/sdk/internal/system/system_info.py", line 214, in _save_conda
+    subprocess.call(
+  File "/root/micromamba/envs/asterix/lib/python3.10/subprocess.py", line 345, in call
+    with Popen(*popenargs, **kwargs) as p:
+  File "/root/micromamba/envs/asterix/lib/python3.10/subprocess.py", line 971, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/root/micromamba/envs/asterix/lib/python3.10/subprocess.py", line 1863, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'conda'
+2024-06-15 18:09:16,569 DEBUG   HandlerThread:31722 [system_info.py:_save_conda():222] Saving conda packages done
+2024-06-15 18:09:16,570 INFO    HandlerThread:31722 [system_monitor.py:probe():229] Finished publishing system info
+2024-06-15 18:09:16,573 DEBUG   SenderThread:31722 [sender.py:send():379] send: files
+2024-06-15 18:09:16,573 INFO    SenderThread:31722 [sender.py:_save_file():1390] saving file wandb-metadata.json with policy now
+2024-06-15 18:09:16,661 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: python_packages
+2024-06-15 18:09:16,661 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: python_packages
+2024-06-15 18:09:16,663 DEBUG   SenderThread:31722 [sender.py:send():379] send: telemetry
+2024-06-15 18:09:16,665 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-15 18:09:16,666 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: stop_status
+2024-06-15 18:09:16,707 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-15 18:09:17,168 INFO    wandb-upload_0:31722 [upload_job.py:push():131] Uploaded file /tmp/tmptj6bx_lmwandb/mm9tl3df-wandb-metadata.json
+2024-06-15 18:09:17,321 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_created():271] file/dir created: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/wandb-metadata.json
+2024-06-15 18:09:17,321 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_created():271] file/dir created: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/requirements.txt
+2024-06-15 18:09:17,322 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_created():271] file/dir created: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/conda-environment.yaml
+2024-06-15 18:09:18,319 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_created():271] file/dir created: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/output.log
+2024-06-15 18:09:20,320 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/output.log
+2024-06-15 18:09:21,684 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: status_report
+2024-06-15 18:09:26,685 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: status_report
+2024-06-15 18:09:31,661 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-15 18:09:31,662 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: stop_status
+2024-06-15 18:09:31,665 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-15 18:09:31,895 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: status_report
+2024-06-15 18:09:36,105 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-15 18:09:36,108 DEBUG   SenderThread:31722 [sender.py:send():379] send: history
+2024-06-15 18:09:36,108 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: summary_record
+2024-06-15 18:09:36,110 INFO    SenderThread:31722 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-15 18:09:36,325 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_created():271] file/dir created: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/wandb-summary.json
+2024-06-15 18:09:37,111 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: status_report
+2024-06-15 18:09:37,746 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-15 18:09:37,748 DEBUG   SenderThread:31722 [sender.py:send():379] send: history
+2024-06-15 18:09:37,748 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: summary_record
+2024-06-15 18:09:37,750 INFO    SenderThread:31722 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-15 18:09:38,326 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/output.log
+2024-06-15 18:09:38,326 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/wandb-summary.json
+2024-06-15 18:09:39,462 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-15 18:09:39,464 DEBUG   SenderThread:31722 [sender.py:send():379] send: history
+2024-06-15 18:09:39,464 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: summary_record
+2024-06-15 18:09:39,467 INFO    SenderThread:31722 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-15 18:09:40,327 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/output.log
+2024-06-15 18:09:40,327 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/wandb-summary.json
+2024-06-15 18:09:40,775 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-15 18:09:40,776 DEBUG   SenderThread:31722 [sender.py:send():379] send: history
+2024-06-15 18:09:40,777 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: summary_record
+2024-06-15 18:09:40,777 INFO    SenderThread:31722 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-15 18:09:41,327 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/wandb-summary.json
+2024-06-15 18:09:42,187 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-15 18:09:42,188 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: status_report
+2024-06-15 18:09:42,189 DEBUG   SenderThread:31722 [sender.py:send():379] send: history
+2024-06-15 18:09:42,189 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: summary_record
+2024-06-15 18:09:42,190 INFO    SenderThread:31722 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-15 18:09:42,327 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/output.log
+2024-06-15 18:09:42,328 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/wandb-summary.json
+2024-06-15 18:09:43,536 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-15 18:09:43,537 DEBUG   SenderThread:31722 [sender.py:send():379] send: history
+2024-06-15 18:09:43,538 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: summary_record
+2024-06-15 18:09:43,538 INFO    SenderThread:31722 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-15 18:09:44,328 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/output.log
+2024-06-15 18:09:44,328 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/wandb-summary.json
+2024-06-15 18:09:44,523 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-15 18:09:44,524 DEBUG   SenderThread:31722 [sender.py:send():379] send: history
+2024-06-15 18:09:44,525 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: summary_record
+2024-06-15 18:09:44,525 INFO    SenderThread:31722 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-15 18:09:45,328 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/wandb-summary.json
+2024-06-15 18:09:45,763 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-15 18:09:45,765 DEBUG   SenderThread:31722 [sender.py:send():379] send: history
+2024-06-15 18:09:45,765 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: summary_record
+2024-06-15 18:09:45,766 INFO    SenderThread:31722 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-15 18:09:46,329 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/output.log
+2024-06-15 18:09:46,329 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/wandb-summary.json
+2024-06-15 18:09:46,662 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-15 18:09:46,662 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: stop_status
+2024-06-15 18:09:46,666 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-15 18:09:46,979 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-15 18:09:46,981 DEBUG   SenderThread:31722 [sender.py:send():379] send: history
+2024-06-15 18:09:46,981 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: summary_record
+2024-06-15 18:09:46,981 INFO    SenderThread:31722 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-15 18:09:47,329 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/wandb-summary.json
+2024-06-15 18:09:47,987 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: status_report
+2024-06-15 18:09:48,041 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-15 18:09:48,156 DEBUG   SenderThread:31722 [sender.py:send():379] send: history
+2024-06-15 18:09:48,156 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: summary_record
+2024-06-15 18:09:48,157 INFO    SenderThread:31722 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-15 18:09:48,330 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/config.yaml
+2024-06-15 18:09:48,330 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/output.log
+2024-06-15 18:09:48,330 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/wandb-summary.json
+2024-06-15 18:09:50,048 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-15 18:09:50,050 DEBUG   SenderThread:31722 [sender.py:send():379] send: history
+2024-06-15 18:09:50,050 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: summary_record
+2024-06-15 18:09:50,050 INFO    SenderThread:31722 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-15 18:09:50,330 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/output.log
+2024-06-15 18:09:50,331 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/wandb-summary.json
+2024-06-15 18:09:51,198 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-15 18:09:51,200 DEBUG   SenderThread:31722 [sender.py:send():379] send: history
+2024-06-15 18:09:51,200 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: summary_record
+2024-06-15 18:09:51,201 INFO    SenderThread:31722 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-15 18:09:51,331 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/wandb-summary.json
+2024-06-15 18:09:52,331 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/output.log
+2024-06-15 18:09:53,201 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: status_report
+2024-06-15 18:09:53,204 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-15 18:09:53,205 DEBUG   SenderThread:31722 [sender.py:send():379] send: history
+2024-06-15 18:09:53,206 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: summary_record
+2024-06-15 18:09:53,206 INFO    SenderThread:31722 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-15 18:09:53,331 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/wandb-summary.json
+2024-06-15 18:09:54,332 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/output.log
+2024-06-15 18:09:54,405 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-15 18:09:54,406 DEBUG   SenderThread:31722 [sender.py:send():379] send: history
+2024-06-15 18:09:54,406 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: summary_record
+2024-06-15 18:09:54,407 INFO    SenderThread:31722 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-15 18:09:55,332 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/wandb-summary.json
+2024-06-15 18:09:55,663 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-15 18:09:55,665 DEBUG   SenderThread:31722 [sender.py:send():379] send: history
+2024-06-15 18:09:55,665 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: summary_record
+2024-06-15 18:09:55,666 INFO    SenderThread:31722 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-15 18:09:56,333 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/output.log
+2024-06-15 18:09:56,333 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/wandb-summary.json
+2024-06-15 18:09:56,913 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-15 18:09:56,915 DEBUG   SenderThread:31722 [sender.py:send():379] send: history
+2024-06-15 18:09:56,916 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: summary_record
+2024-06-15 18:09:56,916 INFO    SenderThread:31722 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-15 18:09:57,333 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/wandb-summary.json
+2024-06-15 18:09:58,007 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-15 18:09:58,009 DEBUG   SenderThread:31722 [sender.py:send():379] send: history
+2024-06-15 18:09:58,010 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: summary_record
+2024-06-15 18:09:58,010 INFO    SenderThread:31722 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-15 18:09:58,333 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/output.log
+2024-06-15 18:09:58,334 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/wandb-summary.json
+2024-06-15 18:09:59,011 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: status_report
+2024-06-15 18:09:59,976 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-15 18:09:59,977 DEBUG   SenderThread:31722 [sender.py:send():379] send: history
+2024-06-15 18:09:59,978 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: summary_record
+2024-06-15 18:09:59,978 INFO    SenderThread:31722 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-15 18:10:00,334 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/output.log
+2024-06-15 18:10:00,334 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/wandb-summary.json
+2024-06-15 18:10:01,257 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-15 18:10:01,259 DEBUG   SenderThread:31722 [sender.py:send():379] send: history
+2024-06-15 18:10:01,259 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: summary_record
+2024-06-15 18:10:01,260 INFO    SenderThread:31722 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-15 18:10:01,334 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/wandb-summary.json
+2024-06-15 18:10:01,662 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-15 18:10:01,662 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: stop_status
+2024-06-15 18:10:01,665 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-15 18:10:02,335 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/output.log
+2024-06-15 18:10:02,991 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-15 18:10:02,993 DEBUG   SenderThread:31722 [sender.py:send():379] send: history
+2024-06-15 18:10:02,993 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: summary_record
+2024-06-15 18:10:02,994 INFO    SenderThread:31722 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-15 18:10:03,335 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/wandb-summary.json
+2024-06-15 18:10:04,336 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/output.log
+2024-06-15 18:10:04,569 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-15 18:10:04,570 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: status_report
+2024-06-15 18:10:04,570 DEBUG   SenderThread:31722 [sender.py:send():379] send: history
+2024-06-15 18:10:04,571 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: summary_record
+2024-06-15 18:10:04,571 INFO    SenderThread:31722 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-15 18:10:05,336 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/wandb-summary.json
+2024-06-15 18:10:06,337 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/output.log
+2024-06-15 18:10:06,354 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-15 18:10:06,355 DEBUG   SenderThread:31722 [sender.py:send():379] send: history
+2024-06-15 18:10:06,356 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: summary_record
+2024-06-15 18:10:06,356 INFO    SenderThread:31722 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-15 18:10:07,337 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/wandb-summary.json
+2024-06-15 18:10:07,798 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-15 18:10:07,800 DEBUG   SenderThread:31722 [sender.py:send():379] send: history
+2024-06-15 18:10:07,800 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: summary_record
+2024-06-15 18:10:07,801 INFO    SenderThread:31722 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-15 18:10:08,337 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/output.log
+2024-06-15 18:10:08,338 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/wandb-summary.json
+2024-06-15 18:10:09,576 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-15 18:10:09,577 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: status_report
+2024-06-15 18:10:09,578 DEBUG   SenderThread:31722 [sender.py:send():379] send: history
+2024-06-15 18:10:09,578 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: summary_record
+2024-06-15 18:10:09,579 INFO    SenderThread:31722 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-15 18:10:10,338 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/output.log
+2024-06-15 18:10:10,338 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/wandb-summary.json
+2024-06-15 18:10:11,556 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-15 18:10:11,558 DEBUG   SenderThread:31722 [sender.py:send():379] send: history
+2024-06-15 18:10:11,558 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: summary_record
+2024-06-15 18:10:11,559 INFO    SenderThread:31722 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-15 18:10:12,339 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/output.log
+2024-06-15 18:10:12,339 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/wandb-summary.json
+2024-06-15 18:10:12,914 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-15 18:10:12,915 DEBUG   SenderThread:31722 [sender.py:send():379] send: history
+2024-06-15 18:10:12,916 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: summary_record
+2024-06-15 18:10:12,916 INFO    SenderThread:31722 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-15 18:10:13,339 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/wandb-summary.json
+2024-06-15 18:10:14,339 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/output.log
+2024-06-15 18:10:14,350 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-15 18:10:14,351 DEBUG   SenderThread:31722 [sender.py:send():379] send: history
+2024-06-15 18:10:14,351 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: summary_record
+2024-06-15 18:10:14,351 INFO    SenderThread:31722 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-15 18:10:15,340 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/wandb-summary.json
+2024-06-15 18:10:15,352 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: status_report
+2024-06-15 18:10:16,340 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/output.log
+2024-06-15 18:10:16,495 DEBUG   SystemMonitor:31722 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-06-15 18:10:16,498 DEBUG   SenderThread:31722 [sender.py:send():379] send: stats
+2024-06-15 18:10:16,662 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-15 18:10:16,662 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: stop_status
+2024-06-15 18:10:16,665 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-15 18:10:17,351 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-15 18:10:17,353 DEBUG   SenderThread:31722 [sender.py:send():379] send: history
+2024-06-15 18:10:17,353 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: summary_record
+2024-06-15 18:10:17,354 INFO    SenderThread:31722 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-15 18:10:18,341 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/output.log
+2024-06-15 18:10:18,341 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/wandb-summary.json
+2024-06-15 18:10:19,859 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-15 18:10:19,860 DEBUG   SenderThread:31722 [sender.py:send():379] send: history
+2024-06-15 18:10:19,861 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: summary_record
+2024-06-15 18:10:19,861 INFO    SenderThread:31722 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-15 18:10:20,342 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/wandb-summary.json
+2024-06-15 18:10:20,862 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: status_report
+2024-06-15 18:10:22,024 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-15 18:10:22,026 DEBUG   SenderThread:31722 [sender.py:send():379] send: history
+2024-06-15 18:10:22,026 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: summary_record
+2024-06-15 18:10:22,027 INFO    SenderThread:31722 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-15 18:10:22,343 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/output.log
+2024-06-15 18:10:22,343 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/wandb-summary.json
+2024-06-15 18:10:24,343 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/output.log
+2024-06-15 18:10:24,577 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-15 18:10:24,578 DEBUG   SenderThread:31722 [sender.py:send():379] send: history
+2024-06-15 18:10:24,579 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: summary_record
+2024-06-15 18:10:24,579 INFO    SenderThread:31722 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-15 18:10:25,344 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/wandb-summary.json
+2024-06-15 18:10:26,344 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/output.log
+2024-06-15 18:10:26,578 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-15 18:10:26,579 DEBUG   SenderThread:31722 [sender.py:send():379] send: history
+2024-06-15 18:10:26,580 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: summary_record
+2024-06-15 18:10:26,580 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: status_report
+2024-06-15 18:10:26,581 INFO    SenderThread:31722 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-15 18:10:27,344 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/wandb-summary.json
+2024-06-15 18:10:27,954 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-15 18:10:27,956 DEBUG   SenderThread:31722 [sender.py:send():379] send: history
+2024-06-15 18:10:27,956 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: summary_record
+2024-06-15 18:10:27,956 INFO    SenderThread:31722 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-15 18:10:28,345 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/output.log
+2024-06-15 18:10:28,346 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/wandb-summary.json
+2024-06-15 18:10:29,497 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-15 18:10:29,498 DEBUG   SenderThread:31722 [sender.py:send():379] send: history
+2024-06-15 18:10:29,499 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: summary_record
+2024-06-15 18:10:29,499 INFO    SenderThread:31722 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-15 18:10:30,346 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/output.log
+2024-06-15 18:10:30,346 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/wandb-summary.json
+2024-06-15 18:10:31,464 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-15 18:10:31,465 DEBUG   SenderThread:31722 [sender.py:send():379] send: history
+2024-06-15 18:10:31,466 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: summary_record
+2024-06-15 18:10:31,466 INFO    SenderThread:31722 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-15 18:10:31,662 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-15 18:10:31,662 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: stop_status
+2024-06-15 18:10:31,665 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-15 18:10:31,914 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: status_report
+2024-06-15 18:10:32,347 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/output.log
+2024-06-15 18:10:32,347 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/wandb-summary.json
+2024-06-15 18:10:34,171 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-15 18:10:34,173 DEBUG   SenderThread:31722 [sender.py:send():379] send: history
+2024-06-15 18:10:34,173 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: summary_record
+2024-06-15 18:10:34,174 INFO    SenderThread:31722 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-15 18:10:34,348 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/wandb-summary.json
+2024-06-15 18:10:35,571 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-15 18:10:35,573 DEBUG   SenderThread:31722 [sender.py:send():379] send: history
+2024-06-15 18:10:35,573 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: summary_record
+2024-06-15 18:10:35,574 INFO    SenderThread:31722 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-15 18:10:36,348 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/output.log
+2024-06-15 18:10:36,349 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/wandb-summary.json
+2024-06-15 18:10:37,574 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: status_report
+2024-06-15 18:10:38,136 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-15 18:10:38,137 DEBUG   SenderThread:31722 [sender.py:send():379] send: history
+2024-06-15 18:10:38,137 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: summary_record
+2024-06-15 18:10:38,138 INFO    SenderThread:31722 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-15 18:10:38,349 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/wandb-summary.json
+2024-06-15 18:10:40,007 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-15 18:10:40,009 DEBUG   SenderThread:31722 [sender.py:send():379] send: history
+2024-06-15 18:10:40,009 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: summary_record
+2024-06-15 18:10:40,010 INFO    SenderThread:31722 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-15 18:10:40,350 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/output.log
+2024-06-15 18:10:40,351 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/wandb-summary.json
+2024-06-15 18:10:42,351 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/output.log
+2024-06-15 18:10:43,011 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: status_report
+2024-06-15 18:10:43,107 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-15 18:10:43,109 DEBUG   SenderThread:31722 [sender.py:send():379] send: history
+2024-06-15 18:10:43,109 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: summary_record
+2024-06-15 18:10:43,110 INFO    SenderThread:31722 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-15 18:10:43,351 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/wandb-summary.json
+2024-06-15 18:10:44,352 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/output.log
+2024-06-15 18:10:45,349 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-15 18:10:45,350 DEBUG   SenderThread:31722 [sender.py:send():379] send: history
+2024-06-15 18:10:45,350 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: summary_record
+2024-06-15 18:10:45,351 INFO    SenderThread:31722 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-15 18:10:45,352 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/wandb-summary.json
+2024-06-15 18:10:46,353 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/output.log
+2024-06-15 18:10:46,501 DEBUG   SenderThread:31722 [sender.py:send():379] send: stats
+2024-06-15 18:10:46,662 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-15 18:10:46,663 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: stop_status
+2024-06-15 18:10:46,666 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-15 18:10:47,163 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-15 18:10:47,164 DEBUG   SenderThread:31722 [sender.py:send():379] send: history
+2024-06-15 18:10:47,165 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: summary_record
+2024-06-15 18:10:47,165 INFO    SenderThread:31722 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-15 18:10:47,353 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/wandb-summary.json
+2024-06-15 18:10:48,166 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: status_report
+2024-06-15 18:10:48,353 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/output.log
+2024-06-15 18:10:48,465 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-15 18:10:48,467 DEBUG   SenderThread:31722 [sender.py:send():379] send: history
+2024-06-15 18:10:48,467 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: summary_record
+2024-06-15 18:10:48,467 INFO    SenderThread:31722 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-15 18:10:49,354 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/wandb-summary.json
+2024-06-15 18:10:50,354 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/output.log
+2024-06-15 18:10:50,659 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-15 18:10:50,660 DEBUG   SenderThread:31722 [sender.py:send():379] send: history
+2024-06-15 18:10:50,661 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: summary_record
+2024-06-15 18:10:50,661 INFO    SenderThread:31722 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-15 18:10:51,355 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/wandb-summary.json
+2024-06-15 18:10:52,232 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-15 18:10:52,233 DEBUG   SenderThread:31722 [sender.py:send():379] send: history
+2024-06-15 18:10:52,233 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: summary_record
+2024-06-15 18:10:52,234 INFO    SenderThread:31722 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-15 18:10:52,356 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/output.log
+2024-06-15 18:10:52,356 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/wandb-summary.json
+2024-06-15 18:10:53,234 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: status_report
+2024-06-15 18:10:53,582 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-15 18:10:53,584 DEBUG   SenderThread:31722 [sender.py:send():379] send: history
+2024-06-15 18:10:53,584 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: summary_record
+2024-06-15 18:10:53,585 INFO    SenderThread:31722 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-15 18:10:54,357 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/output.log
+2024-06-15 18:10:54,357 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/wandb-summary.json
+2024-06-15 18:10:55,914 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-15 18:10:55,916 DEBUG   SenderThread:31722 [sender.py:send():379] send: history
+2024-06-15 18:10:55,916 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: summary_record
+2024-06-15 18:10:55,918 INFO    SenderThread:31722 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-15 18:10:56,357 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/wandb-summary.json
+2024-06-15 18:10:57,336 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-15 18:10:57,337 DEBUG   SenderThread:31722 [sender.py:send():379] send: history
+2024-06-15 18:10:57,338 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: summary_record
+2024-06-15 18:10:57,338 INFO    SenderThread:31722 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-15 18:10:57,358 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/wandb-summary.json
+2024-06-15 18:10:58,338 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: status_report
+2024-06-15 18:10:58,358 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/output.log
+2024-06-15 18:10:58,945 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-15 18:10:58,947 DEBUG   SenderThread:31722 [sender.py:send():379] send: history
+2024-06-15 18:10:58,947 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: summary_record
+2024-06-15 18:10:58,948 INFO    SenderThread:31722 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-15 18:10:59,359 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/wandb-summary.json
+2024-06-15 18:11:00,359 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/output.log
+2024-06-15 18:11:00,503 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-15 18:11:00,513 DEBUG   SenderThread:31722 [sender.py:send():379] send: history
+2024-06-15 18:11:00,514 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: summary_record
+2024-06-15 18:11:00,514 INFO    SenderThread:31722 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-15 18:11:01,359 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/wandb-summary.json
+2024-06-15 18:11:01,662 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-15 18:11:01,663 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: stop_status
+2024-06-15 18:11:01,665 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-15 18:11:02,360 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/output.log
+2024-06-15 18:11:03,019 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-15 18:11:03,020 DEBUG   SenderThread:31722 [sender.py:send():379] send: history
+2024-06-15 18:11:03,021 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: summary_record
+2024-06-15 18:11:03,021 INFO    SenderThread:31722 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-15 18:11:03,360 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/wandb-summary.json
+2024-06-15 18:11:04,022 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: status_report
+2024-06-15 18:11:04,305 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-15 18:11:04,306 DEBUG   SenderThread:31722 [sender.py:send():379] send: history
+2024-06-15 18:11:04,306 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: summary_record
+2024-06-15 18:11:04,307 INFO    SenderThread:31722 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-15 18:11:04,360 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/output.log
+2024-06-15 18:11:04,361 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/wandb-summary.json
+2024-06-15 18:11:05,862 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-15 18:11:05,863 DEBUG   SenderThread:31722 [sender.py:send():379] send: history
+2024-06-15 18:11:05,863 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: summary_record
+2024-06-15 18:11:05,864 INFO    SenderThread:31722 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-15 18:11:06,361 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/output.log
+2024-06-15 18:11:06,362 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/wandb-summary.json
+2024-06-15 18:11:08,362 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/output.log
+2024-06-15 18:11:09,351 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-15 18:11:09,353 DEBUG   SenderThread:31722 [sender.py:send():379] send: history
+2024-06-15 18:11:09,353 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: summary_record
+2024-06-15 18:11:09,353 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: status_report
+2024-06-15 18:11:09,354 INFO    SenderThread:31722 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-15 18:11:09,362 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/wandb-summary.json
+2024-06-15 18:11:10,363 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/output.log
+2024-06-15 18:11:10,699 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-15 18:11:10,700 DEBUG   SenderThread:31722 [sender.py:send():379] send: history
+2024-06-15 18:11:10,701 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: summary_record
+2024-06-15 18:11:10,701 INFO    SenderThread:31722 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-15 18:11:11,363 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/wandb-summary.json
+2024-06-15 18:11:12,363 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/output.log
+2024-06-15 18:11:12,494 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-15 18:11:12,495 DEBUG   SenderThread:31722 [sender.py:send():379] send: history
+2024-06-15 18:11:12,496 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: summary_record
+2024-06-15 18:11:12,496 INFO    SenderThread:31722 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-15 18:11:13,364 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/wandb-summary.json
+2024-06-15 18:11:13,835 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-15 18:11:13,836 DEBUG   SenderThread:31722 [sender.py:send():379] send: history
+2024-06-15 18:11:13,837 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: summary_record
+2024-06-15 18:11:13,837 INFO    SenderThread:31722 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-15 18:11:14,364 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/output.log
+2024-06-15 18:11:14,365 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/wandb-summary.json
+2024-06-15 18:11:14,838 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: status_report
+2024-06-15 18:11:15,184 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-15 18:11:15,185 DEBUG   SenderThread:31722 [sender.py:send():379] send: history
+2024-06-15 18:11:15,186 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: summary_record
+2024-06-15 18:11:15,186 INFO    SenderThread:31722 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-15 18:11:15,365 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/wandb-summary.json
+2024-06-15 18:11:16,365 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/output.log
+2024-06-15 18:11:16,503 DEBUG   SenderThread:31722 [sender.py:send():379] send: stats
+2024-06-15 18:11:16,524 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-15 18:11:16,526 DEBUG   SenderThread:31722 [sender.py:send():379] send: history
+2024-06-15 18:11:16,526 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: summary_record
+2024-06-15 18:11:16,527 INFO    SenderThread:31722 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-15 18:11:16,662 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-15 18:11:16,663 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: stop_status
+2024-06-15 18:11:16,666 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-15 18:11:17,366 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/wandb-summary.json
+2024-06-15 18:11:18,366 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/output.log
+2024-06-15 18:11:18,755 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-15 18:11:18,757 DEBUG   SenderThread:31722 [sender.py:send():379] send: history
+2024-06-15 18:11:18,757 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: summary_record
+2024-06-15 18:11:18,757 INFO    SenderThread:31722 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-15 18:11:19,366 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/wandb-summary.json
+2024-06-15 18:11:20,367 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/output.log
+2024-06-15 18:11:20,758 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: status_report
+2024-06-15 18:11:21,066 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-15 18:11:21,068 DEBUG   SenderThread:31722 [sender.py:send():379] send: history
+2024-06-15 18:11:21,068 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: summary_record
+2024-06-15 18:11:21,068 INFO    SenderThread:31722 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-15 18:11:21,367 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/wandb-summary.json
+2024-06-15 18:11:22,368 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/output.log
+2024-06-15 18:11:24,526 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-15 18:11:24,528 DEBUG   SenderThread:31722 [sender.py:send():379] send: history
+2024-06-15 18:11:24,528 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: summary_record
+2024-06-15 18:11:24,528 INFO    SenderThread:31722 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-15 18:11:25,369 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/wandb-summary.json
+2024-06-15 18:11:25,937 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-15 18:11:25,939 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: status_report
+2024-06-15 18:11:25,939 DEBUG   SenderThread:31722 [sender.py:send():379] send: history
+2024-06-15 18:11:25,940 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: summary_record
+2024-06-15 18:11:25,940 INFO    SenderThread:31722 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-15 18:11:26,369 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/output.log
+2024-06-15 18:11:26,370 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/wandb-summary.json
+2024-06-15 18:11:27,406 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-15 18:11:27,407 DEBUG   SenderThread:31722 [sender.py:send():379] send: history
+2024-06-15 18:11:27,408 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: summary_record
+2024-06-15 18:11:27,408 INFO    SenderThread:31722 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-15 18:11:28,370 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/output.log
+2024-06-15 18:11:28,371 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/wandb-summary.json
+2024-06-15 18:11:29,495 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-15 18:11:29,497 DEBUG   SenderThread:31722 [sender.py:send():379] send: history
+2024-06-15 18:11:29,497 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: summary_record
+2024-06-15 18:11:29,497 INFO    SenderThread:31722 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-15 18:11:30,371 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/output.log
+2024-06-15 18:11:30,371 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/wandb-summary.json
+2024-06-15 18:11:31,292 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-15 18:11:31,294 DEBUG   SenderThread:31722 [sender.py:send():379] send: history
+2024-06-15 18:11:31,294 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: summary_record
+2024-06-15 18:11:31,294 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: status_report
+2024-06-15 18:11:31,295 INFO    SenderThread:31722 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-15 18:11:31,371 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/wandb-summary.json
+2024-06-15 18:11:31,662 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-15 18:11:31,663 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: stop_status
+2024-06-15 18:11:31,666 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-15 18:11:32,372 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/output.log
+2024-06-15 18:11:32,691 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-15 18:11:32,693 DEBUG   SenderThread:31722 [sender.py:send():379] send: history
+2024-06-15 18:11:32,693 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: summary_record
+2024-06-15 18:11:32,693 INFO    SenderThread:31722 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-15 18:11:33,372 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/wandb-summary.json
+2024-06-15 18:11:34,372 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/output.log
+2024-06-15 18:11:34,444 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-15 18:11:34,446 DEBUG   SenderThread:31722 [sender.py:send():379] send: history
+2024-06-15 18:11:34,446 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: summary_record
+2024-06-15 18:11:34,447 INFO    SenderThread:31722 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-15 18:11:35,373 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/wandb-summary.json
+2024-06-15 18:11:36,373 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/output.log
+2024-06-15 18:11:36,417 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-15 18:11:36,418 DEBUG   SenderThread:31722 [sender.py:send():379] send: history
+2024-06-15 18:11:36,418 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: status_report
+2024-06-15 18:11:36,419 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: summary_record
+2024-06-15 18:11:36,420 INFO    SenderThread:31722 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-15 18:11:37,374 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/wandb-summary.json
+2024-06-15 18:11:37,814 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-15 18:11:37,815 DEBUG   SenderThread:31722 [sender.py:send():379] send: history
+2024-06-15 18:11:37,816 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: summary_record
+2024-06-15 18:11:37,816 INFO    SenderThread:31722 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-15 18:11:38,374 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/output.log
+2024-06-15 18:11:38,374 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/wandb-summary.json
+2024-06-15 18:11:40,097 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-15 18:11:40,098 DEBUG   SenderThread:31722 [sender.py:send():379] send: history
+2024-06-15 18:11:40,098 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: summary_record
+2024-06-15 18:11:40,099 INFO    SenderThread:31722 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-15 18:11:40,375 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/wandb-summary.json
+2024-06-15 18:11:41,459 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-15 18:11:41,461 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: status_report
+2024-06-15 18:11:41,462 DEBUG   SenderThread:31722 [sender.py:send():379] send: history
+2024-06-15 18:11:41,462 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: summary_record
+2024-06-15 18:11:41,463 INFO    SenderThread:31722 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-15 18:11:42,376 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/output.log
+2024-06-15 18:11:42,377 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/wandb-summary.json
+2024-06-15 18:11:46,019 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-15 18:11:46,021 DEBUG   SenderThread:31722 [sender.py:send():379] send: history
+2024-06-15 18:11:46,021 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: summary_record
+2024-06-15 18:11:46,021 INFO    SenderThread:31722 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-15 18:11:46,378 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/wandb-summary.json
+2024-06-15 18:11:46,506 DEBUG   SenderThread:31722 [sender.py:send():379] send: stats
+2024-06-15 18:11:46,507 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: status_report
+2024-06-15 18:11:46,663 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-15 18:11:46,663 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: stop_status
+2024-06-15 18:11:46,666 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-15 18:11:48,227 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-15 18:11:48,229 DEBUG   SenderThread:31722 [sender.py:send():379] send: history
+2024-06-15 18:11:48,229 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: summary_record
+2024-06-15 18:11:48,229 INFO    SenderThread:31722 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-15 18:11:48,378 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/output.log
+2024-06-15 18:11:48,379 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/wandb-summary.json
+2024-06-15 18:11:50,138 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-15 18:11:50,139 DEBUG   SenderThread:31722 [sender.py:send():379] send: history
+2024-06-15 18:11:50,140 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: summary_record
+2024-06-15 18:11:50,140 INFO    SenderThread:31722 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-15 18:11:50,379 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/output.log
+2024-06-15 18:11:50,380 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/wandb-summary.json
+2024-06-15 18:11:51,678 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-15 18:11:51,680 DEBUG   SenderThread:31722 [sender.py:send():379] send: history
+2024-06-15 18:11:51,680 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: status_report
+2024-06-15 18:11:51,680 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: summary_record
+2024-06-15 18:11:51,681 INFO    SenderThread:31722 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-15 18:11:52,380 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/output.log
+2024-06-15 18:11:52,380 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/wandb-summary.json
+2024-06-15 18:11:55,653 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-15 18:11:55,655 DEBUG   SenderThread:31722 [sender.py:send():379] send: history
+2024-06-15 18:11:55,655 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: summary_record
+2024-06-15 18:11:55,655 INFO    SenderThread:31722 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-15 18:11:56,382 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/output.log
+2024-06-15 18:11:56,382 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/wandb-summary.json
+2024-06-15 18:11:57,656 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: status_report
+2024-06-15 18:11:59,013 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-15 18:11:59,014 DEBUG   SenderThread:31722 [sender.py:send():379] send: history
+2024-06-15 18:11:59,014 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: summary_record
+2024-06-15 18:11:59,016 INFO    SenderThread:31722 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-15 18:11:59,383 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/wandb-summary.json
+2024-06-15 18:12:00,384 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/output.log
+2024-06-15 18:12:00,727 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-15 18:12:00,728 DEBUG   SenderThread:31722 [sender.py:send():379] send: history
+2024-06-15 18:12:00,729 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: summary_record
+2024-06-15 18:12:00,729 INFO    SenderThread:31722 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-15 18:12:01,384 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/wandb-summary.json
+2024-06-15 18:12:01,663 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-15 18:12:01,664 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: stop_status
+2024-06-15 18:12:01,667 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-15 18:12:02,385 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/output.log
+2024-06-15 18:12:02,788 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: status_report
+2024-06-15 18:12:02,835 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-15 18:12:02,837 DEBUG   SenderThread:31722 [sender.py:send():379] send: history
+2024-06-15 18:12:02,837 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: summary_record
+2024-06-15 18:12:02,837 INFO    SenderThread:31722 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-15 18:12:03,385 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/wandb-summary.json
+2024-06-15 18:12:04,385 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/output.log
+2024-06-15 18:12:05,015 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-15 18:12:05,017 DEBUG   SenderThread:31722 [sender.py:send():379] send: history
+2024-06-15 18:12:05,017 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: summary_record
+2024-06-15 18:12:05,017 INFO    SenderThread:31722 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-15 18:12:05,386 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/wandb-summary.json
+2024-06-15 18:12:06,386 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/output.log
+2024-06-15 18:12:06,676 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-15 18:12:06,677 DEBUG   SenderThread:31722 [sender.py:send():379] send: history
+2024-06-15 18:12:06,678 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: summary_record
+2024-06-15 18:12:06,678 INFO    SenderThread:31722 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-15 18:12:07,387 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/wandb-summary.json
+2024-06-15 18:12:08,387 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/output.log
+2024-06-15 18:12:08,551 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-15 18:12:08,553 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: status_report
+2024-06-15 18:12:08,553 DEBUG   SenderThread:31722 [sender.py:send():379] send: history
+2024-06-15 18:12:08,553 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: summary_record
+2024-06-15 18:12:08,554 INFO    SenderThread:31722 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-15 18:12:09,387 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/wandb-summary.json
+2024-06-15 18:12:10,388 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/output.log
+2024-06-15 18:12:10,636 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-15 18:12:10,638 DEBUG   SenderThread:31722 [sender.py:send():379] send: history
+2024-06-15 18:12:10,639 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: summary_record
+2024-06-15 18:12:10,639 INFO    SenderThread:31722 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-15 18:12:11,388 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/wandb-summary.json
+2024-06-15 18:12:12,389 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/output.log
+2024-06-15 18:12:12,691 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-15 18:12:12,693 DEBUG   SenderThread:31722 [sender.py:send():379] send: history
+2024-06-15 18:12:12,693 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: summary_record
+2024-06-15 18:12:12,693 INFO    SenderThread:31722 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-15 18:12:13,389 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/wandb-summary.json
+2024-06-15 18:12:13,694 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: status_report
+2024-06-15 18:12:14,390 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/output.log
+2024-06-15 18:12:14,805 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-15 18:12:14,807 DEBUG   SenderThread:31722 [sender.py:send():379] send: history
+2024-06-15 18:12:14,807 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: summary_record
+2024-06-15 18:12:14,808 INFO    SenderThread:31722 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-15 18:12:15,390 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/wandb-summary.json
+2024-06-15 18:12:16,390 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/output.log
+2024-06-15 18:12:16,489 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-15 18:12:16,491 DEBUG   SenderThread:31722 [sender.py:send():379] send: history
+2024-06-15 18:12:16,491 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: summary_record
+2024-06-15 18:12:16,492 INFO    SenderThread:31722 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-15 18:12:16,508 DEBUG   SenderThread:31722 [sender.py:send():379] send: stats
+2024-06-15 18:12:16,663 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-15 18:12:16,664 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: stop_status
+2024-06-15 18:12:16,667 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-15 18:12:17,391 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/wandb-summary.json
+2024-06-15 18:12:18,391 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/output.log
+2024-06-15 18:12:18,411 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-15 18:12:18,413 DEBUG   SenderThread:31722 [sender.py:send():379] send: history
+2024-06-15 18:12:18,413 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: summary_record
+2024-06-15 18:12:18,413 INFO    SenderThread:31722 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-15 18:12:19,392 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/wandb-summary.json
+2024-06-15 18:12:19,414 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: status_report
+2024-06-15 18:12:20,392 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/output.log
+2024-06-15 18:12:21,573 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-15 18:12:21,574 DEBUG   SenderThread:31722 [sender.py:send():379] send: history
+2024-06-15 18:12:21,575 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: summary_record
+2024-06-15 18:12:21,575 INFO    SenderThread:31722 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-15 18:12:22,393 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/output.log
+2024-06-15 18:12:22,394 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/wandb-summary.json
+2024-06-15 18:12:24,576 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: status_report
+2024-06-15 18:12:24,868 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-15 18:12:24,870 DEBUG   SenderThread:31722 [sender.py:send():379] send: history
+2024-06-15 18:12:24,870 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: summary_record
+2024-06-15 18:12:24,871 INFO    SenderThread:31722 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-15 18:12:25,395 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/wandb-summary.json
+2024-06-15 18:12:26,395 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/output.log
+2024-06-15 18:12:28,136 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-15 18:12:28,137 DEBUG   SenderThread:31722 [sender.py:send():379] send: history
+2024-06-15 18:12:28,138 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: summary_record
+2024-06-15 18:12:28,138 INFO    SenderThread:31722 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-15 18:12:28,396 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/wandb-summary.json
+2024-06-15 18:12:29,824 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-15 18:12:29,826 DEBUG   SenderThread:31722 [sender.py:send():379] send: history
+2024-06-15 18:12:29,826 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: status_report
+2024-06-15 18:12:29,826 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: summary_record
+2024-06-15 18:12:29,827 INFO    SenderThread:31722 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-15 18:12:30,397 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/output.log
+2024-06-15 18:12:30,397 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/wandb-summary.json
+2024-06-15 18:12:31,664 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-15 18:12:31,664 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: stop_status
+2024-06-15 18:12:31,668 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-15 18:12:32,059 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-15 18:12:32,061 DEBUG   SenderThread:31722 [sender.py:send():379] send: history
+2024-06-15 18:12:32,061 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: summary_record
+2024-06-15 18:12:32,061 INFO    SenderThread:31722 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-15 18:12:32,397 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/wandb-summary.json
+2024-06-15 18:12:33,590 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-15 18:12:33,592 DEBUG   SenderThread:31722 [sender.py:send():379] send: history
+2024-06-15 18:12:33,592 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: summary_record
+2024-06-15 18:12:33,593 INFO    SenderThread:31722 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-15 18:12:34,398 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/output.log
+2024-06-15 18:12:34,399 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/wandb-summary.json
+2024-06-15 18:12:35,594 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: status_report
+2024-06-15 18:12:36,380 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-15 18:12:36,381 DEBUG   SenderThread:31722 [sender.py:send():379] send: history
+2024-06-15 18:12:36,381 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: summary_record
+2024-06-15 18:12:36,382 INFO    SenderThread:31722 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-15 18:12:36,399 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/wandb-summary.json
+2024-06-15 18:12:38,400 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/output.log
+2024-06-15 18:12:39,991 DEBUG   SenderThread:31722 [sender.py:send():379] send: telemetry
+2024-06-15 18:12:39,991 DEBUG   SenderThread:31722 [sender.py:send():379] send: exit
+2024-06-15 18:12:39,991 INFO    SenderThread:31722 [sender.py:send_exit():586] handling exit code: 1
+2024-06-15 18:12:39,992 INFO    SenderThread:31722 [sender.py:send_exit():588] handling runtime: 203
+2024-06-15 18:12:39,994 INFO    SenderThread:31722 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-15 18:12:39,995 INFO    SenderThread:31722 [sender.py:send_exit():594] send defer
+2024-06-15 18:12:39,995 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: defer
+2024-06-15 18:12:39,995 INFO    HandlerThread:31722 [handler.py:handle_request_defer():172] handle defer: 0
+2024-06-15 18:12:39,995 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: defer
+2024-06-15 18:12:39,996 INFO    SenderThread:31722 [sender.py:send_request_defer():610] handle sender defer: 0
+2024-06-15 18:12:39,996 INFO    SenderThread:31722 [sender.py:transition_state():614] send defer: 1
+2024-06-15 18:12:39,996 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: defer
+2024-06-15 18:12:39,996 INFO    HandlerThread:31722 [handler.py:handle_request_defer():172] handle defer: 1
+2024-06-15 18:12:39,996 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: defer
+2024-06-15 18:12:39,996 INFO    SenderThread:31722 [sender.py:send_request_defer():610] handle sender defer: 1
+2024-06-15 18:12:39,996 INFO    SenderThread:31722 [sender.py:transition_state():614] send defer: 2
+2024-06-15 18:12:39,997 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: defer
+2024-06-15 18:12:39,997 INFO    HandlerThread:31722 [handler.py:handle_request_defer():172] handle defer: 2
+2024-06-15 18:12:39,997 INFO    HandlerThread:31722 [system_monitor.py:finish():203] Stopping system monitor
+2024-06-15 18:12:39,997 INFO    HandlerThread:31722 [interfaces.py:finish():202] Joined cpu monitor
+2024-06-15 18:12:39,998 INFO    HandlerThread:31722 [interfaces.py:finish():202] Joined disk monitor
+2024-06-15 18:12:39,998 DEBUG   SystemMonitor:31722 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-06-15 18:12:39,999 DEBUG   SystemMonitor:31722 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-06-15 18:12:40,090 INFO    HandlerThread:31722 [interfaces.py:finish():202] Joined gpu monitor
+2024-06-15 18:12:40,091 INFO    HandlerThread:31722 [interfaces.py:finish():202] Joined memory monitor
+2024-06-15 18:12:40,091 INFO    HandlerThread:31722 [interfaces.py:finish():202] Joined network monitor
+2024-06-15 18:12:40,092 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: defer
+2024-06-15 18:12:40,092 INFO    SenderThread:31722 [sender.py:send_request_defer():610] handle sender defer: 2
+2024-06-15 18:12:40,092 INFO    SenderThread:31722 [sender.py:transition_state():614] send defer: 3
+2024-06-15 18:12:40,092 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: defer
+2024-06-15 18:12:40,092 INFO    HandlerThread:31722 [handler.py:handle_request_defer():172] handle defer: 3
+2024-06-15 18:12:40,099 DEBUG   SenderThread:31722 [sender.py:send():379] send: stats
+2024-06-15 18:12:40,100 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: defer
+2024-06-15 18:12:40,100 INFO    SenderThread:31722 [sender.py:send_request_defer():610] handle sender defer: 3
+2024-06-15 18:12:40,100 INFO    SenderThread:31722 [sender.py:transition_state():614] send defer: 4
+2024-06-15 18:12:40,101 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: defer
+2024-06-15 18:12:40,101 INFO    HandlerThread:31722 [handler.py:handle_request_defer():172] handle defer: 4
+2024-06-15 18:12:40,101 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: defer
+2024-06-15 18:12:40,101 INFO    SenderThread:31722 [sender.py:send_request_defer():610] handle sender defer: 4
+2024-06-15 18:12:40,101 INFO    SenderThread:31722 [sender.py:transition_state():614] send defer: 5
+2024-06-15 18:12:40,101 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: defer
+2024-06-15 18:12:40,101 INFO    HandlerThread:31722 [handler.py:handle_request_defer():172] handle defer: 5
+2024-06-15 18:12:40,102 DEBUG   SenderThread:31722 [sender.py:send():379] send: summary
+2024-06-15 18:12:40,103 INFO    SenderThread:31722 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-15 18:12:40,103 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: defer
+2024-06-15 18:12:40,103 INFO    SenderThread:31722 [sender.py:send_request_defer():610] handle sender defer: 5
+2024-06-15 18:12:40,103 INFO    SenderThread:31722 [sender.py:transition_state():614] send defer: 6
+2024-06-15 18:12:40,103 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: defer
+2024-06-15 18:12:40,103 INFO    HandlerThread:31722 [handler.py:handle_request_defer():172] handle defer: 6
+2024-06-15 18:12:40,104 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: defer
+2024-06-15 18:12:40,104 INFO    SenderThread:31722 [sender.py:send_request_defer():610] handle sender defer: 6
+2024-06-15 18:12:40,109 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: status_report
+2024-06-15 18:12:40,277 INFO    SenderThread:31722 [sender.py:transition_state():614] send defer: 7
+2024-06-15 18:12:40,277 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: defer
+2024-06-15 18:12:40,277 INFO    HandlerThread:31722 [handler.py:handle_request_defer():172] handle defer: 7
+2024-06-15 18:12:40,277 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: defer
+2024-06-15 18:12:40,277 INFO    SenderThread:31722 [sender.py:send_request_defer():610] handle sender defer: 7
+2024-06-15 18:12:40,401 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/config.yaml
+2024-06-15 18:12:40,401 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/wandb-summary.json
+2024-06-15 18:12:40,991 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: poll_exit
+2024-06-15 18:12:41,998 INFO    SenderThread:31722 [sender.py:transition_state():614] send defer: 8
+2024-06-15 18:12:41,998 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: poll_exit
+2024-06-15 18:12:41,998 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: defer
+2024-06-15 18:12:41,998 INFO    HandlerThread:31722 [handler.py:handle_request_defer():172] handle defer: 8
+2024-06-15 18:12:41,999 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: defer
+2024-06-15 18:12:41,999 INFO    SenderThread:31722 [sender.py:send_request_defer():610] handle sender defer: 8
+2024-06-15 18:12:41,999 INFO    SenderThread:31722 [sender.py:transition_state():614] send defer: 9
+2024-06-15 18:12:41,999 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: defer
+2024-06-15 18:12:42,000 INFO    HandlerThread:31722 [handler.py:handle_request_defer():172] handle defer: 9
+2024-06-15 18:12:42,000 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: defer
+2024-06-15 18:12:42,000 INFO    SenderThread:31722 [sender.py:send_request_defer():610] handle sender defer: 9
+2024-06-15 18:12:42,000 INFO    SenderThread:31722 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-06-15 18:12:42,401 INFO    Thread-12 :31722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/output.log
+2024-06-15 18:12:42,402 INFO    SenderThread:31722 [dir_watcher.py:finish():388] scan: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files
+2024-06-15 18:12:42,403 INFO    SenderThread:31722 [dir_watcher.py:finish():402] scan save: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/config.yaml config.yaml
+2024-06-15 18:12:42,403 INFO    SenderThread:31722 [dir_watcher.py:finish():402] scan save: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/conda-environment.yaml conda-environment.yaml
+2024-06-15 18:12:42,407 INFO    SenderThread:31722 [dir_watcher.py:finish():402] scan save: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/wandb-metadata.json wandb-metadata.json
+2024-06-15 18:12:42,407 INFO    SenderThread:31722 [dir_watcher.py:finish():402] scan save: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/requirements.txt requirements.txt
+2024-06-15 18:12:42,407 INFO    SenderThread:31722 [dir_watcher.py:finish():402] scan save: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/output.log output.log
+2024-06-15 18:12:42,408 INFO    SenderThread:31722 [dir_watcher.py:finish():402] scan save: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/wandb-summary.json wandb-summary.json
+2024-06-15 18:12:42,408 INFO    SenderThread:31722 [sender.py:transition_state():614] send defer: 10
+2024-06-15 18:12:42,408 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: defer
+2024-06-15 18:12:42,411 INFO    HandlerThread:31722 [handler.py:handle_request_defer():172] handle defer: 10
+2024-06-15 18:12:42,412 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: defer
+2024-06-15 18:12:42,412 INFO    SenderThread:31722 [sender.py:send_request_defer():610] handle sender defer: 10
+2024-06-15 18:12:42,412 INFO    SenderThread:31722 [file_pusher.py:finish():172] shutting down file pusher
+2024-06-15 18:12:42,785 INFO    wandb-upload_0:31722 [upload_job.py:push():131] Uploaded file /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/config.yaml
+2024-06-15 18:12:42,869 INFO    wandb-upload_3:31722 [upload_job.py:push():131] Uploaded file /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/wandb-summary.json
+2024-06-15 18:12:42,871 INFO    wandb-upload_1:31722 [upload_job.py:push():131] Uploaded file /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/requirements.txt
+2024-06-15 18:12:42,887 INFO    wandb-upload_2:31722 [upload_job.py:push():131] Uploaded file /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/files/output.log
+2024-06-15 18:12:42,992 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: poll_exit
+2024-06-15 18:12:42,993 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: poll_exit
+2024-06-15 18:12:43,087 INFO    Thread-11 (_thread_body):31722 [sender.py:transition_state():614] send defer: 11
+2024-06-15 18:12:43,088 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: defer
+2024-06-15 18:12:43,088 INFO    HandlerThread:31722 [handler.py:handle_request_defer():172] handle defer: 11
+2024-06-15 18:12:43,089 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: defer
+2024-06-15 18:12:43,089 INFO    SenderThread:31722 [sender.py:send_request_defer():610] handle sender defer: 11
+2024-06-15 18:12:43,089 INFO    SenderThread:31722 [file_pusher.py:join():178] waiting for file pusher
+2024-06-15 18:12:43,089 INFO    SenderThread:31722 [sender.py:transition_state():614] send defer: 12
+2024-06-15 18:12:43,089 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: defer
+2024-06-15 18:12:43,089 INFO    HandlerThread:31722 [handler.py:handle_request_defer():172] handle defer: 12
+2024-06-15 18:12:43,090 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: defer
+2024-06-15 18:12:43,090 INFO    SenderThread:31722 [sender.py:send_request_defer():610] handle sender defer: 12
+2024-06-15 18:12:43,090 INFO    SenderThread:31722 [file_stream.py:finish():614] file stream finish called
+2024-06-15 18:12:43,692 INFO    SenderThread:31722 [file_stream.py:finish():618] file stream finish is done
+2024-06-15 18:12:43,692 INFO    SenderThread:31722 [sender.py:transition_state():614] send defer: 13
+2024-06-15 18:12:43,692 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: defer
+2024-06-15 18:12:43,692 INFO    HandlerThread:31722 [handler.py:handle_request_defer():172] handle defer: 13
+2024-06-15 18:12:43,693 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: defer
+2024-06-15 18:12:43,693 INFO    SenderThread:31722 [sender.py:send_request_defer():610] handle sender defer: 13
+2024-06-15 18:12:43,693 INFO    SenderThread:31722 [sender.py:transition_state():614] send defer: 14
+2024-06-15 18:12:43,693 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: defer
+2024-06-15 18:12:43,693 INFO    HandlerThread:31722 [handler.py:handle_request_defer():172] handle defer: 14
+2024-06-15 18:12:43,694 DEBUG   SenderThread:31722 [sender.py:send():379] send: final
+2024-06-15 18:12:43,694 DEBUG   SenderThread:31722 [sender.py:send():379] send: footer
+2024-06-15 18:12:43,694 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: defer
+2024-06-15 18:12:43,694 INFO    SenderThread:31722 [sender.py:send_request_defer():610] handle sender defer: 14
+2024-06-15 18:12:43,696 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: poll_exit
+2024-06-15 18:12:43,696 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: poll_exit
+2024-06-15 18:12:43,697 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-15 18:12:43,698 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: server_info
+2024-06-15 18:12:43,699 DEBUG   SenderThread:31722 [sender.py:send_request():406] send_request: server_info
+2024-06-15 18:12:43,739 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: get_summary
+2024-06-15 18:12:43,740 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: sampled_history
+2024-06-15 18:12:43,847 DEBUG   HandlerThread:31722 [handler.py:handle_request():146] handle_request: shutdown
+2024-06-15 18:12:43,847 INFO    HandlerThread:31722 [handler.py:finish():866] shutting down handler
+2024-06-15 18:12:44,699 INFO    WriterThread:31722 [datastore.py:close():296] close: /root/aprendi/Atari-DQN-Asterix/wandb/run-20240615_180915-llnpjdz5/run-llnpjdz5.wandb
+2024-06-15 18:12:44,846 INFO    SenderThread:31722 [sender.py:finish():1546] shutting down sender
+2024-06-15 18:12:44,846 INFO    SenderThread:31722 [file_pusher.py:finish():172] shutting down file pusher
+2024-06-15 18:12:44,846 INFO    SenderThread:31722 [file_pusher.py:join():178] waiting for file pusher

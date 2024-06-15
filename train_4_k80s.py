@@ -50,22 +50,24 @@ args = {
     "epoch": 6000,
     "batch-size": 32,
     "ddqn_store": True,
-    "eval_cycle": 6000,
+    "eval_cycle": 1000,
     "which_gpu": 0,
 }
 
 sweep_configuration = {
-    'name': 'optimize SVM',
+    'name': 'Asterix Sweep less mem',
     'method': 'bayes',
-    'metric': {'goal': 'minimize', 'name': 'avgloss'},
+    'metric': {'goal': 'maximize', 'name': 'avgreward'},
     'parameters': {
         'batchsize': {'min':32, 'max': 64},
         'lr': {'min': 2e-5, 'max': 2e-2},
         'gamma': {'min': 0.9000, 'max': 0.9999},
-        'EPS_START': {'min': 1, 'max': 100},
-        'EPS_DECAY': {'min': 1000, 'max': 100000},
-        'EPS_END': {'min': 0.00005, 'max': 0.05},
-        'WARMUP': {'min': 100, 'max': 50000}
+        'EPS_END': {'min': 0.00001, 'max': 0.01},
+        'EPS_DECAY': {'min': 10000, 'max': 200000},
+        'EPS_START': {'min': 0.1, 'max': 1.0},
+        'WARMUP': {'min': 100, 'max': 50000},
+        'EVAL_CYCLE': {'min': 500, 'max': 3000},
+        'REPLAY_MEMORY':{'min':100000, 'max':350000}
     }
 }
 
@@ -118,6 +120,8 @@ def train():
     loc_eps_decay = wandb.config.EPS_DECAY
     loc_eps_end = wandb.config.EPS_END
     loc_warmup = wandb.config.WARMUP
+    loc_rep_mem = 118000 #max on 16GB VRAM
+    loc_eval_cycle = wandb.config.EVAL_CYCLE
 
     global eps_threshold
     global eps_decay
@@ -165,7 +169,7 @@ def train():
     target_net.eval()
 
     # replay memory
-    memory = ReplayMemory(50000)
+    memory = ReplayMemory(loc_rep_mem)
 
     # optimizer
     optimizer = optim.AdamW(policy_net.parameters(), lr=loc_lr, amsgrad=True)
@@ -287,7 +291,7 @@ def train():
 
             if done:
                 # eval
-                if epoch % args["eval_cycle"] == 0:
+                if epoch % loc_eval_cycle == 0:
                     with torch.no_grad():
                         video.reset()
                         evalenv = gym.make("AsterixNoFrameskip-v4")
@@ -354,5 +358,5 @@ def train():
     del target_net
     del policy_net
 
-
-wandb.agent(sweep_id="6iwelpel", count=10, function=train)
+#wandb.agent(sweep_id=sweep_id, count=10, function=train)
+wandb.agent(sweep_id="tjr5cwv2", count=10, function=train)
