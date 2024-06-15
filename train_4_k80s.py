@@ -59,8 +59,8 @@ sweep_configuration = {
     'method': 'bayes',
     'metric': {'goal': 'minimize', 'name': 'avgloss'},
     'parameters': {
-        'batchsize': [32, 64],
-        'lr': {'min': 2e-2, 'max': 2e-5},
+        'batchsize': {'min':32, 'max': 64},
+        'lr': {'min': 2e-5, 'max': 2e-2},
         'gamma': {'min': 0.9000, 'max': 0.9999},
         'EPS_START': {'min': 1, 'max': 100},
         'EPS_DECAY': {'min': 1000, 'max': 100000},
@@ -78,12 +78,13 @@ eps_decay = 0
 
 target_net = None
 policy_net = None
+env = None
 
 torch.backends.cudnn.benchmark = True
 torch.backends.cudnn.enabled = True
 
 sweep_id = wandb.sweep(sweep=sweep_configuration, project="AA_Asterix_Optim")
-
+print(f'sweep_id = {sweep_id}')
 
 def select_action(state: torch.Tensor) -> torch.Tensor:
     '''
@@ -109,6 +110,7 @@ def select_action(state: torch.Tensor) -> torch.Tensor:
 
 
 def train():
+    wandb.init(config=sweep_configuration)
     loc_batch_size = wandb.config.batchsize
     loc_lr = wandb.config.lr
     loc_gamma = wandb.config.gamma
@@ -124,6 +126,7 @@ def train():
     global cuda_device
     global policy_net
     global target_net
+    global env
     eps_end = loc_eps_end
     eps_start = loc_eps_start
     eps_decay = loc_eps_decay
@@ -268,7 +271,7 @@ def train():
                     next_state_selected_qvalue = next_state_target_qvalues.max(1, keepdim=True)[0]  # (bs,1)
 
             # td target
-            tdtarget = next_state_selected_qvalue * GAMMA * ~done_batch + reward_batch  # (bs,1)
+            tdtarget = next_state_selected_qvalue * loc_gamma * ~done_batch + reward_batch  # (bs,1)
 
             # optimize
             criterion = nn.SmoothL1Loss()
@@ -342,6 +345,7 @@ def train():
 
         output = f"Epoch {epoch}: Loss {total_loss:.2f}, Reward {total_reward}, Avgloss {avgloss:.2f}, Avgreward {avgreward:.2f}, Epsilon {eps_threshold:.2f}, TotalStep {steps_done}"
         print(output)
+        wandb.log({"Epoch": epoch, "Loss": total_loss, "Reward": total_reward, "Average Loss": avgloss, "Average Reward": avgreward, "Epsilon": eps_threshold})
         with open(log_path, "a") as f:
             f.write(f"{output}\n")
         torch.cuda.empty_cache()
@@ -351,4 +355,4 @@ def train():
     del policy_net
 
 
-wandb.agent(sweep_id=sweep_id, count=10, function=train)
+wandb.agent(sweep_id="6iwelpel", count=10, function=train)
