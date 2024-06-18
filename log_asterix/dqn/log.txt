@@ -13580,3 +13580,15 @@ Epoch 4025: Loss 15.79, Reward 84.0, Avgloss 10.64, Avgreward 48.26, Epsilon 0.0
 Epoch 4026: Loss 15.62, Reward 72.0, Avgloss 10.74, Avgreward 48.72, Epsilon 0.00, TotalStep 2482121
 Epoch 4027: Loss 9.76, Reward 40.0, Avgloss 10.78, Avgreward 48.93, Epsilon 0.00, TotalStep 2482782
 Epoch 4028: Loss 9.01, Reward 41.0, Avgloss 10.74, Avgreward 48.79, Epsilon 0.00, TotalStep 2483388
+Epoch 4029: Loss 15.00, Reward 77.0, Avgloss 10.78, Avgreward 49.03, Epsilon 0.00, TotalStep 2484428
+Epoch 4030: Loss 9.17, Reward 40.0, Avgloss 10.78, Avgreward 48.96, Epsilon 0.00, TotalStep 2485033
+Epoch 4031: Loss 12.60, Reward 73.0, Avgloss 10.80, Avgreward 49.20, Epsilon 0.00, TotalStep 2485925
+Epoch 4032: Loss 14.41, Reward 78.0, Avgloss 10.90, Avgreward 49.72, Epsilon 0.00, TotalStep 2486965
+Epoch 4033: Loss 6.37, Reward 29.0, Avgloss 10.86, Avgreward 49.55, Epsilon 0.00, TotalStep 2487426
+Epoch 4034: Loss 16.22, Reward 79.0, Avgloss 10.88, Avgreward 49.78, Epsilon 0.00, TotalStep 2488512
+Epoch 4035: Loss 9.79, Reward 40.0, Avgloss 10.86, Avgreward 49.56, Epsilon 0.00, TotalStep 2489183
+Epoch 4036: Loss 15.46, Reward 66.0, Avgloss 10.93, Avgreward 49.96, Epsilon 0.00, TotalStep 2490263
+Epoch 4037: Loss 16.05, Reward 74.0, Avgloss 10.95, Avgreward 50.07, Epsilon 0.00, TotalStep 2491293
+Epoch 4038: Loss 12.79, Reward 61.0, Avgloss 10.99, Avgreward 50.33, Epsilon 0.00, TotalStep 2492190
+Epoch 4039: Loss 5.86, Reward 27.0, Avgloss 10.96, Avgreward 50.23, Epsilon 0.00, TotalStep 2492588
+Epoch 4040: Loss 10.06, Reward 45.0, Avgloss 10.93, Avgreward 50.06, Epsilon 0.00, TotalStep 2493278

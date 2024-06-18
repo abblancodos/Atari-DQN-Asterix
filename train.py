@@ -46,8 +46,8 @@ from collections import deque
 
 args = {
     "method": ["dqn", "ddqn"],
-    "lr": 0.001131,
-    "epoch": 1000000,
+    "lr": 0.00002,
+    "epoch": 20000,
     "batch-size": 32,
     "ddqn_store": True,
     "eval_cycle": 2000,
@@ -56,11 +56,11 @@ args = {
 
 ddqn = 0
 # some hyperparameters
-GAMMA = 0.9685  # bellman function
-EPS_START = 15
-EPS_END = 0.00281
+GAMMA = 0.9680  # bellman function
+EPS_START = 1
+EPS_END = 0.0001
 EPS_DECAY = 109200
-WARMUP = 43000  # don't update net until WARMUP steps
+WARMUP = 50000  # don't update net until WARMUP steps
 
 steps_done = 0
 eps_threshold = EPS_START
@@ -125,7 +125,7 @@ target_net.load_state_dict(policy_net.state_dict())
 target_net.eval()
 
 # replay memory
-memory = ReplayMemory(50000)
+memory = ReplayMemory(80000)
 
 # optimizer
 optimizer = optim.AdamW(policy_net.parameters(), lr=args["lr"], amsgrad=True)
@@ -241,7 +241,7 @@ for epoch in range(args["epoch"]):
         optimizer.step()
 
         # let target_net = policy_net every 1000 steps
-        if steps_done % 1000 == 0:
+        if steps_done % 4000 == 0:
             target_net.load_state_dict(policy_net.state_dict())
 
         if done:
@@ -250,7 +250,7 @@ for epoch in range(args["epoch"]):
                 with torch.no_grad():
                     video.reset()
                     evalenv = gym.make("AsterixNoFrameskip-v4")
-                    evalenv = AtariWrapper(evalenv, video=video)
+                    evalenv = AtariWrapper(evalenv, terminal_on_life_loss=False,  video=video)
                     obs, info = evalenv.reset()
                     obs = torch.from_numpy(obs).cuda()
                     obs = torch.stack((obs, obs, obs, obs)).unsqueeze(0)
