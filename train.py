@@ -250,7 +250,7 @@ for epoch in range(args["epoch"]):
                 with torch.no_grad():
                     video.reset()
                     evalenv = gym.make("AsterixNoFrameskip-v4")
-                    evalenv = AtariWrapper(evalenv, video=video)
+                    evalenv = AtariWrapper(evalenv, video=video,  terminal_on_life_loss=False)
                     obs, info = evalenv.reset()
                     obs = torch.from_numpy(obs).cuda()
                     obs = torch.stack((obs, obs, obs, obs)).unsqueeze(0)
