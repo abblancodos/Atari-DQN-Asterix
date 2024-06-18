@@ -13596,3 +13596,9 @@ Epoch 4041: Loss 11.99, Reward 62.0, Avgloss 10.91, Avgreward 49.96, Epsilon 0.0
 Epoch 4042: Loss 13.21, Reward 56.0, Avgloss 10.93, Avgreward 50.05, Epsilon 0.00, TotalStep 2494982
 Epoch 4043: Loss 10.96, Reward 49.0, Avgloss 10.90, Avgreward 49.96, Epsilon 0.00, TotalStep 2495813
 Epoch 4044: Loss 16.20, Reward 69.0, Avgloss 10.94, Avgreward 50.01, Epsilon 0.00, TotalStep 2496913
+Epoch 4045: Loss 16.45, Reward 82.0, Avgloss 11.06, Avgreward 50.61, Epsilon 0.00, TotalStep 2498084
+Epoch 4046: Loss 13.12, Reward 54.0, Avgloss 11.14, Avgreward 50.95, Epsilon 0.00, TotalStep 2498963
+Epoch 4047: Loss 6.35, Reward 24.0, Avgloss 11.09, Avgreward 50.62, Epsilon 0.00, TotalStep 2499362
+Epoch 4048: Loss 18.17, Reward 80.0, Avgloss 11.19, Avgreward 51.15, Epsilon 0.00, TotalStep 2500522
+Epoch 4049: Loss 13.65, Reward 62.0, Avgloss 11.23, Avgreward 51.30, Epsilon 0.00, TotalStep 2501480
+Epoch 4050: Loss 10.02, Reward 43.0, Avgloss 11.19, Avgreward 51.14, Epsilon 0.00, TotalStep 2502136
